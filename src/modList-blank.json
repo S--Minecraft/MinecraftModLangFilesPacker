@@ -1,0 +1,28 @@
+{
+  "pack-version": "",
+  "minecraft-version":
+    [
+      ""
+    ],
+  "mods":
+    [
+      {
+        "name": "",
+        "version": "",
+        "contributors": "",
+        "path": "",
+        "advanced":
+          {
+            "type": "",
+            "path": ""
+          }
+      }
+    ],
+  "cautions":
+    [
+      {
+        "title": "",
+        "description": ""
+      }
+    ]
+}
