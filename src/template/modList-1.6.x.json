@@ -1,0 +1,700 @@
+{
+  "pack-version": "4.0.0",
+  "minecraft-version":
+    [
+      "1.6.2",
+      "1.6.4"
+    ],
+  "mods":
+    [
+      {
+        "name": "1.6.x用バニラアイテム翻訳修正パッチ",
+        "version": "1.6.x",
+        "path": "assets/minecraft/lang",
+      },
+      {
+        "name": "AdditionalBuildcraftObjects",
+        "version": "1.0.6.1.7.4",
+        "url": "http://www.siedler25.org/uploads/minecraft/AdditionalBuildcraftObjects/",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "lang/abo"
+          }
+      },
+      {
+        "name": "AdditionalPipes",
+        "version": "2.6.0",
+        "contributors": "小咲みずあき",
+        "url": "https://github.com/tcooc/AdditionalPipesBC/releases",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "buildcraft/additionalpipes/lang"
+          }
+      },
+      {
+        "name": "AdvancedMachines",
+        "version": "exprecode_1.6.4",
+        "contributors": "小咲みずあき",
+        "url": "http://atomicstryker.net/advancedmachines.php",
+        "path": "assets/advancedmachines/lang"
+      },
+      {
+        "name": "AdvancedMachines",
+        "version": "IC2 1.118(NOT exp)",
+        "url": "http://atomicstryker.net/advancedmachines.php",
+        "path": "assets/advancedmachines/lang"
+      },
+      {
+        "name": "AdvancedReactors",
+        "version": "1.0.0pre2",
+        "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=9212",
+        "path": "assets/advancedreactors/lang"
+      },
+      {
+        "name": "AppliedEnergistics",
+        "version": "rv13c",
+        "contributors": "hekaton",
+        "url": "http://ae1.ae-mod.info/",
+        "path": "assets/appeng/lang",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "assets/appeng/lang"
+          }
+      },
+      {
+        "name": "ArsMagica2",
+        "version": "1.1.1c",
+        "contributors": "ryuoryu",
+        "url": "http://www.minecraftforum.net/topic/2028696",
+        "path": "assets/arsmagica/lang"
+      },
+      {
+        "name": "Balkon'sWeaponMod",
+        "version": "1.13.6"
+        "contributors": "xyzzy",
+        "url": "http://www.minecraftforum.net/topic/211517",
+        "path": "assets/weaponmod/lang",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "assets/weaponmod/lang"
+          }
+      },
+      {
+        "name": "BetterStorage",
+        "version": "0.7.3.38",
+        "contributors": "くらぅん",
+        "url": "http://www.minecraftforum.net/topic/1548203",
+        "path": "assets/betterstorage/lang"
+      },
+      {
+        "name": "BiblioCraft",
+        "version": "1.4.1",
+        "url": "http://www.minecraftforum.net/topic/1680480",
+        "path": "assets/biliocraft/lang"
+      },
+      {
+        "name": "BigReactors",
+        "version": "0.2.14A",
+        "url": "http://www.big-reactors.com/",
+        "path": "assets/bigreactors/lang"
+      },
+      {
+        "name": "BiomesO'Plenty",
+        "version": "1.2.1.434",
+        "contributors": "dentigami",
+        "url": "http://www.minecraftforum.net/topic/1495041",
+        "path": "assets/biomesoplenty/lang"
+      },
+      {
+        "name": "BloodMagic",
+        "version": "1.0.0",
+        "url": "http://www.minecraftforum.net/topic/1899223",
+        "path": "assets/alchemicalwizardry/lang"
+      },
+      {
+        "name": "BuildCraft",
+        "version": "4.2.2",
+        "contributors": "小咲みずあき",
+        "url": "http://www.mod-buildcraft.com/",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "buildcraft"
+          }
+      },
+      {
+        "name": "BuildCraftTools",
+        "version": "1.4a-15",
+        "url": "http://www.minecraftforum.net/topic/1728544",
+        "path": "assets/bctools/lang"
+      },
+      {
+        "name": "Chargepads",
+        "version": "2.8.0.93",
+        "url": "http://forum.industrial-craft.net/?page=Thread&threadID=7892",
+        "path": "assets/chargepads/lang"
+      },
+      {
+        "name": "ChickenChunks",
+        "version": "1.3.3.2・1.3.3.4",
+        "url": "http://www.minecraftforum.net/topic/909223",
+        "path": "assets/chickenchunks/lang"
+      },
+      {
+        "name": "CoFHCore",
+        "version": "2.0.0.0",
+        "url": "http://teamcofh.com/core-mods/cofhcore/",
+        "path": "assets/cofh/lang"
+      },
+      {
+        "name": "Compactsolars",
+        "version": "4.4.11.114",
+        "url": "http://forum.industrial-craft.net/?page=Thread&threadID=4827",
+        "path": "assets/compactsolars/lang"
+      },
+      {
+        "name": "CompactWindmills",
+        "version": "1.0.2.3",
+        "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=9205",
+        "path": "assets/compactwindmills/lang"
+      },
+      {
+        "name": "CustomNPCs",
+        "version": "1.6.2",
+        "contributors": "ゲスト",
+        "url": "http://www.minecraftforum.net/topic/833003",
+        "path": "assets/customnpcs/lang"
+      },
+      {
+        "name": "DimensionalAnchor",
+        "version": "56.0.1",
+        "url": "",
+        "path": "assets/dimanchor/lang"
+      },
+      {
+        "name": "EnderIO",
+        "version": "1.0.0",
+        "contributors": "小咲みずあき",
+        "url": "",
+        "path": "assets/enderio/lang"
+      },
+      {
+        "name": "Enderstorage",
+        "version": "1.4.3.3",
+        "url": "",
+        "path": "assets/enderstorage/lang"
+      },
+      {
+        "name": "EquivalentExchange3",
+        "version": "0.1.129",
+        "contributors": "サーモン2号",
+        "url": "",
+        "path": "assets/ee3/lang"
+      },
+      {
+        "name": "ExtraCells",
+        "version": "1.6.7d",
+        "url": "",
+        "path": "assets/extracells/lang"
+      },
+      {
+        "name": "ExtraTiC",
+        "version": "0.7.6",
+        "url": "",
+        "path": "assets/extratic/lang"
+      },
+      {
+        "name": "Factorization",
+        "version": "0.8.04β13",
+        "url": "",
+        "path": "assets/factorization/lang"
+      },
+      {
+        "name": "ForestryForMinecraft",
+        "version": "2.3.1.0",
+        "url": "",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "forestry"
+          }
+      },
+      {
+        "name": "ForgeMultiPart",
+        "version": "1.0.0.240",
+        "contributors": "くらぅん",
+        "url": "",
+        "path": "assets/microblock/lang"
+      },
+      {
+        "name": "FrogCraft",
+        "version": "1.6.2",
+        "url": "",
+        "path": "assets/frogcraft/lang"
+      },
+      {
+        "name": "Gregtech",
+        "version": "4.04l",
+        "url": "",
+        "advanced":
+          {
+            "type": "config",
+            "path": "GregTech"
+          }
+      },
+      {
+        "name": "Gregtech",
+        "version": "4.08s",
+        "url": "",
+        "advanced":
+          {
+            "type": "config",
+            "path": "GregTech"
+          }
+      },
+      {
+        "name": "Immbis'sPerpherals",
+        "version": "56.0.1・57.0.1",
+        "url": "",
+        "path": "assets/immibis_peripherals/lang"
+      },
+      {
+        "name": "ImmibisCore",
+        "version": "56.0.5",
+        "url": "",
+        "path": "assets/immibis_core/lang"
+      },
+      {
+        "name": "ImmibisCore",
+        "version": "57.1.92",
+        "url": "",
+        "path": "assets/immibis_core/lang"
+      },
+      {
+        "name": "Immbis'sMicroblocks",
+        "version": "56.0.5・57.5.0",
+        "url": "",
+        "path": "assets/immibis_microblocks/lang"
+      },
+      {
+        "name": "IndustrialCraft2",
+        "version": "1.118.401-lf",
+        "contributors": "Sdaru241",
+        "url": "",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "ic2"
+          }
+      },
+      {
+        "name": "IndustrialCraft2",
+        "version": "ex.2.0.397",
+        "contributors": "小咲みずあき",
+        "url": "",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "ic2"
+          }
+      },
+      {
+        "name": "IronChest",
+        "version": "5.3.14・5.4.1",
+        "contributors": "サーモン2号",
+        "url": "",
+        "path": "assets/ironchest/lang"
+      },
+      {
+        "name": "LaserMod",
+        "version": "1.0.0",
+        "contributors": "くらぅん",
+        "url": "",
+        "path": "assets/lasermod/lang"
+      },
+      {
+        "name": "LogisticsPipes",
+        "version": "0.7.4.dev98",
+        "contributors": "小咲みずあき",
+        "url": "",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "logisticspipes"
+          }
+      },
+      {
+        "name": "MineFactoryReloaded2",
+        "version": "2.7.6",
+        "contributors": "小咲みずあき",
+        "url": "",
+        "advanced":
+          {
+            "type": "config",
+            "path": "MineFactoryReloaded"
+          }
+      },
+      {
+        "name": "MystCraft",
+        "version": "0.10.7・0.10.11",
+        "contributors": "123ぉこｐ",
+        "url": "",
+        "path": "assets/mystcraft/lang"
+      },
+      {
+        "name": "NEIPlugins",
+        "version": "1.1.0.6",
+        "url": "",
+        "path":
+        [
+          "assets/neiplugins/lang",
+          "assets/neiplugins/lang_nei"
+        ]
+      },
+      {
+        "name": "NetherOres",
+        "version": "2.2.2",
+        "contributors": "小咲みずあき",
+        "url": "",
+        "advanced":
+          {
+            "type": "config",
+            "path": "NetherOres"
+          }
+      },
+      {
+        "name": "NHAVE'sOmniWrench",
+        "version": "1.0.5",
+        "contributors": "サーモン2号",
+        "url": "",
+        "path": "assets/nhwrench/lang"
+      },
+      {
+        "name": "NotEnoughItems",
+        "version": "1.6.1.4・1.6.1.8",
+        "url": "",
+        "path": "assets/nei/lang"
+      },
+      {
+        "name": "NuclearControl",
+        "version": "1.6.2b・1.6.2e",
+        "url": "",
+        "path": "assets/nuclearcontrol/lang"
+      },
+      {
+        "name": "OpenBlocks",
+        "version": "1.2.4",
+        "contributors": "missing229",
+        "url": "",
+        "path": "assets/openblocks/lang"
+      },
+      {
+        "name": "PowerConverters",
+        "version": "1.6.4",
+        "contributors": "小咲みずあき",
+        "url": "",
+        "path": "assets/powerconverters/lang"
+      },
+      {
+        "name": "ProjectRed",
+        "version": "4.0.1.4",
+        "url": "",
+        "path": "assets/projectred/lang"
+      },
+      {
+        "name": "ProjectRed",
+        "version": "4.2.2.19",
+        "url": "",
+        "path": "assets/projectred/lang"
+      },
+      {
+        "name": "RedLogic",
+        "version": "56.1.1",
+        "url": "",
+        "path": "assets/redlogic/lang"
+      },
+      {
+        "name": "RedLogic",
+        "version": "57.2.8",
+        "url": "",
+        "path": "assets/redlogic/lang"
+      },
+      {
+        "name": "RedstoneArsenal",
+        "version": "1.0.0.0",
+        "contributors": "サーモン2号",
+        "url": "",
+        "path": "assets/redstonearsenal/lang"
+      },
+      {
+        "name": "RemoteIO",
+        "version": "1.9.1-b14",
+        "url": "",
+        "advanced":
+          {
+            "type": "config",
+            "path": "RemoteIO"
+          }
+      },
+      {
+        "name": "Steve'sCarts",
+        "version": "2.0.0.b10",
+        "url": "",
+        "path": "assets/stevecarts/lang"
+      },
+      {
+        "name": "TerraFirmaCraft",
+        "version": "0.77.22",
+        "url": "",
+        "path": "assets/terrafirmacraft/lang"
+      },
+      {
+        "name": "ThermalExpansion",
+        "version": "3.0.0.2",
+        "contributors": "小咲みずあき",
+        "url": "",
+        "path": "assets/thermalexpansion/lang"
+      },
+      {
+        "name": "Tinkers'Construct",
+        "version": "1.5.4d3",
+        "contributors": "dentigami",
+        "url": "",
+        "path": "assets/tinker/lang"
+      },
+      {
+        "name": "Tinkers'Mechworks",
+        "version": "0.1.4",
+        "url": "",
+        "path": "assets/tmechworks/lang"
+      },
+      {
+        "name": "Translocator",
+        "version": "1.1.0.12・1.1.0.13",
+        "contributors": "missing229",
+        "url": "",
+        "path": "assets/translocator/lang"
+      },
+      {
+        "name": "TubeStuff",
+        "version": "56.0.3・57.1.3",
+        "url": "",
+        "path": "assets/tubestuff/lang"
+      },
+      {
+        "name": "UndergroundBiomes・UnderGroundBiomesConstructs",
+        "version": "0.4.2c・0.2",
+        "contributors": "dentigami",
+        "url": "",
+        "path": "assets/undergroundbiomes/lang"
+      },
+      {
+        "name": "UsefulFood",
+        "version": "1.4.4",
+        "contributors": "wagasi03",
+        "url": "",
+        "path": "assets/usefulfood/lang"
+      },
+      {
+        "name": "Waila",
+        "version": "1.4.5",
+        "url": "",
+        "path": "assets/waila/lang"
+      },
+      {
+        "name": "WildCaves",
+        "version": "0.4.3.4",
+        "contributors": "くらぅん",
+        "url": "",
+        "path": "assets/wildcaves3/lang"
+      },
+      {
+        "name": "WR-CBE",
+        "version": "1.4.0.5・1.4.0.6",
+        "contributors": "missing229",
+        "url": "",
+        "path":
+          [
+            "assets/wrcbe_addons/lang",
+            "assets/wrcbe_core/lang",
+            "assets/wrcbe_logic/lang"
+          ]
+      }
+    ],
+  "cautions":
+    [
+      {
+        "title": "導入方法",
+        "description": "MODフォルダ(.zip/.jar)の中の指定の場所にlangファイルを入れてください。\n指定の場所については非公式日本ユーザーフォーラムの\nlangファイルのトピックをご覧ください。",
+        "type": "0"
+      },
+      {
+        "title": "導入方法",
+        "description": "この「S_lang_files_1.6.x_****.zip」をリソースパックの場所に置いて、\n「To_Config」フォルダと「To_zip.jar」フォルダを\n別の場所に移して(zipからコピーしてzip内のものを削除)、\n以下の注意の通りにするだけです。",
+        "type": "1"
+      },
+      {
+        "title": "導入方法",
+        "description": "この「S_lang_files_Ex_****.zip」を展開して、中にある.minecraftフォルダを\n.minecraft（Minecraft.exeのあるフォルダ）に導入してください。\n（「上書きしますか？」と出たら「はい」をクリックしてください）",
+        "type": "2"
+      },
+      {
+        "title": "バージョン確認",
+        "description": "導入されているバージョンを確認するにはリソースパックのフォルダの\n中の「S_lang_files_in_version.txt」をご覧ください。",
+        "type": "2"
+      },
+      {
+        "title": "エンドロールの導入方法",
+        "description": "非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。",
+        "type": "0"
+      },
+      {
+        "title": "1.6.x用バニラアイテム翻訳修正パッチの導入方法",
+        "description": "非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。\nCrafterKina様のOptifineLocalizeFixを利用する場合は、こちらのバニラアイテム修正パッチのみを導入してください。",
+        "type": "0"
+      },
+      {
+        "title": "Gregtech日本語翻訳ファイル導入時の注意",
+        "description": "Gregtechはlangファイルを.minecraft/config/gregtechに\n導入する必要があります。(上書き)\nまた、「Gregtech.lang」は4.08s用です。\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\nリネームした上で上記の通りに導入してください。\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "type": "0"
+      },
+      {
+        "title": "Gregtech日本語翻訳ファイル導入時の注意",
+        "description": "Gregtechはこのリソースパックを導入しただけでは有効になりません。\n「To_Config」フォルダ内にある「Gregtech.lang」を.minecraft/config/gregtechに\n導入してください。(上書き)\nまた、「Gregtech.lang」は4.08s用です。\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\nリネームした上で上記の通りに導入してください。\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "type": "1"
+      },
+      {
+        "title": "Gregtech日本語翻訳ファイル導入時の注意",
+        "description": "ダウンロードした地点では、Gregtechの4.08s用が有効になっています。\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\nリネームした上で上記の通りに導入してください。\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "type": "2"
+      },
+      {
+        "title": "RemoteIO日本語翻訳ファイル導入時の注意",
+        "description": "RemoteIOはlangファイルを.minecraft/config/remoteio/langに\n導入する必要があります。",
+        "type": "0"
+      },
+      {
+        "title": "RemoteIO日本語翻訳ファイル導入時の注意",
+        "description": "RemoteIOはこのリソースパックを導入しただけでは有効になりません。\n「To_Config」フォルダ内にある「ja_JP.properties」を\n.minecraft/config/remoteio/langに導入してください。",
+        "type": "1"
+      },
+      {
+        "title": "IndustrialCraft2の日本語翻訳ファイル導入時の注意",
+        "description": "IndustrialCraftのlangファイルについては、1.118-401-lfとついているほうがlf用、ついていないほうがex版となります。",
+        "type": "0"
+      },
+      {
+        "title": "IndustrialCraft2の日本語翻訳ファイル導入時の注意",
+        "description": "IndustrialCraft2はこのリソースパックを導入しただけでは\n有効になりません。「To_zip.jar」フォルダ内にある「ja_JP.properties」を\n通常導入してください。また、「ja_JP.properties」はex用です。\nlf用をご利用の方は、「ja_JP_1.118-401-lf.properties」を\n「ja_JP.properties」にリネームした上で上記の通りに導入してください。\n元のex用の「ja_JP.properties」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "type": "1"
+      },
+      {
+        "title": "IndustrialCraft2の日本語翻訳ファイル導入時の注意",
+        "description": "IndustrialCraft2は導入しただけでは\n有効になりません。「To_zip.jar」フォルダ内にある「ja_JP.properties」を\n通常導入してください。また、「ja_JP.properties」はex用です。\nlf用をご利用の方は、「ja_JP_1.118-401-lf.properties」を\n「ja_JP.properties」にリネームした上で上記の通りに導入してください。\n元のex用の「ja_JP.properties」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "type": "2"
+      },
+      {
+        "title": "MineFactoryReloaded2の日本語翻訳ファイル導入時の注意",
+        "description": "MineFactoryReloadedはlangファイルを\n.minecraft/config/powercrystals/minefactoryreloadedに\n導入する必要があります。",
+        "type": "0"
+      },
+      {
+        "title": "MineFactoryReloaded2の日本語翻訳ファイル導入時の注意",
+        "description": "MineFactoryReloadedはこのリソースパックを導入しただけでは\n有効になりません。「To_Config」フォルダ内にある「ja_JP.lang」を\n.minecraft/config/powercrystals/minefactoryreloadedに\n導入してください。",
+        "type": "1"
+      },
+      {
+        "title": "NetherOresの日本語翻訳ファイル導入時の注意",
+        "description": "NetherOresはlangファイルを\n.minecraft/config/powercrystals/netheroresに\n導入する必要があります。",
+        "type": "0"
+      },
+      {
+        "title": "NetherOresの日本語翻訳ファイル導入時の注意",
+        "description": "NetherOresはこのリソースパックを導入しただけでは\n有効になりません。「To_Config」フォルダ内にある「ja_JP.lang」を\n.minecraft/config/powercrystals/netheroresに\n導入してください。",
+        "type": "1"
+      },
+      {
+        "title": "ImmibisCore 56.0.5の日本語翻訳ファイル導入時の注意",
+        "description": "ImmibisCoreのlangファイルについては、56.0.5とついているほうが56.0.5用、ついていないほうが57.1.92用となります。",
+        "type": "0"
+      },
+      {
+        "title": "ImmibisCore 56.0.5の日本語翻訳ファイル導入時の注意",
+        "description": "ダウンロードした地点では、ImmibisCoreの57.1.92用が有効になっています。\n56.0.5用を有効にするには、「ja_JP_56.0.5.lang」を「ja_JP.lang」に\nリネームしてください。\n元の57.1.92用の「ja_JP.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "type":
+          [
+            "1",
+            "2"
+          ]
+      },
+      {
+        "title": "RedLogic 56.1.1の日本語翻訳ファイル導入時の注意",
+        "description": "ダウンロードした地点では、RedLogicの57.2.8版が有効になっています。\n56.1.1版を有効にするには、「ja_JP_56.1.1.lang」を「ja_JP.lang」に\nリネームしてください。\n元の57.2.8用の「ja_JP.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "type":
+          [
+            "1",
+            "2"
+          ]
+      },
+      {
+        "title": "ProjectRed 4.0.1.4の日本語翻訳ファイル導入時の注意",
+        "description": "ダウンロードした地点では、ProjectRedの4.2.2.19版が有効になっています。\n4.0.1.4版を有効にするには、「ja_JP_4.0.1.4.lang」を「ja_JP.lang」に\nリネームしてください。\n元の4.2.2.19用の「ja_JP.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "type":
+          [
+            "1",
+            "2"
+          ]
+      },
+      {
+        "title": "AdditonalBuildcraftObjects・AdditionalPipes・AdvancedMachines 1.118(NOT ex)\n　ForestryForMinecraft・LogisticsPipes・Buildcraft日本語翻訳ファイル導入時の注意",
+        "description": "これらのlangファイルは導入しただけでは有効になりません。\n「To_zip.jar」フォルダ内のそれぞれのフォルダにある\n「ja_JP.lang」/「ja_JP.properties」を通常導入してください。",
+        "type":
+          [
+            "1",
+            "2"
+          ]
+      },
+      {
+        "title": "AppliedEnergistics・Balkon'sWeaponMod日本語翻訳ファイル導入時の注意",
+        "description": "これらのlangファイルは導入しただけでは有効になりません。\n「To_zip.jar」フォルダ内のそれぞれのフォルダにある\n「lang.list」/「lang.txt」を通常導入してください。",
+        "type":
+          [
+            "1",
+            "2"
+          ]
+      },
+      {
+        "title": "BigReactors・FrogCraftの日本語翻訳ファイル導入時の注意",
+        "description": "BigReactors,FrogCraftのlangファイルはen_US書き換え方式です。\n今後可能になったらja_JP型に直します。\n（en_US書き換え方式だからと言って英語を選択しなければ\n　翻訳されないわけではありません）",
+        "type":
+          [
+            "0",
+            "1",
+            "2"
+          ]
+      },
+      {
+        "title": "OptineLocalizeFixをご利用の方へ",
+        "description": "CrafterKina様のOptifineLocalizeFixを利用する場合は、\nこちらのリソースパックのみを導入してください。\n両方導入するとバニラアイテム翻訳修正パッチが適応されません。",
+        "type":
+          [
+            "1",
+            "2"
+          ]
+      },
+      {
+        "title": "報告・連絡",
+        "description": "翻訳できないや翻訳がおかしいなどの報告や連絡は\n非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。",
+        "type":
+          [
+            "0",
+            "1",
+            "2"
+          ]
+      }
+    ]
+}
