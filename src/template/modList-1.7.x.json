@@ -1,0 +1,190 @@
+{
+  "pack-version": "3.0.0",
+  "minecraft-version":
+    [
+      "1.7.2",
+      "1.7.10"
+    ],
+  "mods":
+    [
+      {
+        "name": "エンドロールのクレジット&エンドポエム",
+        "version": "1.7.x",
+        "path": "assets/minecraft/lang",
+      },
+      {
+        "name": "AppliedEnergistics2",
+        "version": "rv0b18",
+        "url": "http://ae2.ae-mod.info/",
+        "path": "assets/appliedenergistics2/lang"
+      },
+      {
+        "name": "BuildCraft",
+        "version": "5.0.2",
+        "url": "http://www.mod-buildcraft.com/",
+        "path": "assets/buildcraft/lang"
+      },
+      {
+        "name": "Chisel2",
+        "version": "2.3.5.31",
+        "contributors": "negitoro",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2254671",
+        "path": "assets/chisel/lang"
+      },
+      {
+        "name": "CogsOfTheMachine",
+        "version": "0.14pre1",
+        "contributors": "おかもち",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1442605",
+        "path": "assets/cogs/lang"
+      },
+      {
+        "name": "CustomNPCs",
+        "version": "1.7.10b",
+        "contributors": "tokikome",
+        "url": "http://www.minecraftforum.net/topic/833003",
+        "path": "assets/customnpcs/lang"
+      },
+      {
+        "name": "EnhancedBiomes",
+        "version": "pre-2.4a",
+        "contributors": "Mintmoon",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1294692",
+        "path": "assets/enhancedbiomes/lang"
+      },
+      {
+        "name": "FallingMeteors",
+        "version": "2.13.1",
+        "contributors": "Mintmoon",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1280918",
+        "path": "assets/meteors/lang"
+      },
+      {
+        "name": "HardcoreQuestingMode",
+        "version": "1.6.2",
+        "url": "http://minecraft.curseforge.com/mc-mods/77027",
+        "path": "assets/hqm/lang"
+      },
+      {
+        "name": "Metallurgy",
+        "version": "4.6.80",
+        "contributors": "hyakulei0743",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1295123",
+        "path": "assets/metallurgy/lang"
+      },
+      {
+        "name": "MetallurgyCore",
+        "version": "4.0.4.18",
+        "contributors": "hyakulei0743",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1295123",
+        "path": "assets/metallurgycore/lang"
+      },
+      {
+        "name": "MrCrayfish'sFurnitureMod",
+        "version": "3.3.6",
+        "contributors": "akstn37",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1282349",
+        "path": "assets/cfm/lang"
+      },
+      {
+        "name": "Pam'sHarvestCraft",
+        "version": "1.7.10a",
+        "contributors": "Mintmoon",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1274678",
+        "path": "assets/harvestcraft/lang"
+      },
+      {
+        "name": "SteelIndustries",
+        "version": "0.5c",
+        "contributors": "くらぅん",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1446339",
+        "path": "assets/steelindustries/lang"
+      },
+      {
+        "name": "Tinkers'Construct",
+        "version": "1.6.0a5",
+        "contributors": "dentigami",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1287648",
+        "path": "assets/tinker/lang"
+      },
+      {
+        "name": "Tinkers'Mechworks",
+        "version": "0.1.5",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1446244",
+        "path": "assets/tmechworks/lang"
+      },
+      {
+        "name": "TwilightForest",
+        "version": "2.0.3",
+        "contributors": "Sdaru241",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1276258",
+        "path": "assets/twilightforest/lang"
+      },
+      {
+        "name": "TwilightForest",
+        "version": "2.0.3",
+        "contributors": "Sdaru241",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1276258",
+        "path": "assets/twilightforest/lang"
+      },
+      {
+        "name": "Witchery",
+        "version": "0.20.5",
+        "contributors": "tokikome",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1445248",
+        "path": "assets/witchery/lang"
+      }
+    ],
+  "cautions":
+    [
+      {
+        "title": "導入方法",
+        "description": "MODフォルダ(.zip/.jar)の中の指定の場所にlangファイルを入れてください。\n指定の場所については非公式日本ユーザーフォーラムの\nlangファイルのトピックをご覧ください。",
+        "type": "0"
+      },
+      {
+        "title": "導入方法",
+        "description": "この「S_lang_files_1.7.x_****.zip」をリソースパックの場所に置いて、\n以下の注意の通りにするだけです。",
+        "type": "1"
+      },
+      {
+        "title": "導入方法",
+        "description": "この「S_lang_files_1.7.x_Ex_****.zip」を展開して、中にある.minecraftフォルダを\n.minecraft（Minecraft.exeのあるフォルダ）に導入してください。\n（「上書きしますか？」と出たら「はい」をクリックしてください）",
+        "type": "2"
+      },
+      {
+        "title": "バージョン確認",
+        "description": "導入されているバージョンを確認するにはリソースパックのフォルダの\n中の「S_lang_files_in_version.txt」をご覧ください。",
+        "type": "2"
+      },
+      {
+        "title": "エンドロールの導入方法",
+        "description": "非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。",
+        "type": "0"
+      },
+      {
+        "title": "TwilightForest 2.0.3の日本語翻訳ファイル導入時の注意",
+        "description": "TwilightForestのlangファイルについては、2.0.3とついているほうが2.0.3用、ついていないほうが2.3.2用となります。",
+        "type": "0"
+      },
+      {
+        "title": "TwilightForest 2.0.3の日本語翻訳ファイル導入時の注意",
+        "description": "ダウンロードした地点では、TwilightForestの2.0.3用が有効になっています。\n2.0.3用を有効にするには、「ja_JP_2.0.3.lang」を「ja_JP.lang」に\nリネームしてください。\n元の2.3.2用の「ja_JP.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "type":
+          [
+            "1",
+            "2"
+          ]
+      },
+      {
+        "title": "報告・連絡",
+        "description": "翻訳できないや翻訳がおかしいなどの報告や連絡は\n非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。",
+        "type":
+          [
+            "0",
+            "1",
+            "2"
+          ]
+      }
+    ]
+}
