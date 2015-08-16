@@ -2,15 +2,15 @@
 - pack-version 配布バージョン名
 - minecraft-version 対応マイクラバージョン名の配列
 - mods 対応modの配列
--- name mod名
--- version 対応バージョン
--- contributors 貢献した人たち (省略可)
--- url 配布url (省略可)
--- path langファイルの場所 (省略可)(配列でも可)
--- advanced configやzipへの導入が必要かどうか(省略可)
---- type configへ導入するかzipへ導入するか
---- path その導入する場所
+ - name mod名
+ - version 対応バージョン
+ - contributors 貢献した人たち (省略可)
+ - url 配布url (省略可)
+ - path langファイルの場所 (省略可)(配列でも可)
+ - advanced configやzipへの導入が必要かどうか(省略可)
+    - type configへ導入するかzipへ導入するか
+    - path その導入する場所
 - cautions 注意書き
--- title タイトル
--- description 説明
--- type 注意書きが必要な版の配列(0: 通常版, 1: リソースパック版, 2: 直接導入型)
+ - title タイトル
+ - description 説明
+ - type 注意書きが必要な版の配列(0: 通常版, 1: リソースパック版, 2: 直接導入型)
