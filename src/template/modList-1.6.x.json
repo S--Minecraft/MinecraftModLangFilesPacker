@@ -13,6 +13,11 @@
         "path": "assets/minecraft/lang",
       },
       {
+        "name": "エンドロールのクレジット&エンドポエム",
+        "version": "1.6.x",
+        "path": "assets/minecraft/lang",
+      },
+      {
         "name": "AdditionalBuildcraftObjects",
         "version": "1.0.6.1.7.4",
         "url": "http://www.siedler25.org/uploads/minecraft/AdditionalBuildcraftObjects/",
@@ -172,51 +177,51 @@
       {
         "name": "DimensionalAnchor",
         "version": "56.0.1",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/dimanchor/lang"
       },
       {
         "name": "EnderIO",
         "version": "1.0.0",
         "contributors": "小咲みずあき",
-        "url": "",
+        "url": "http://enderio.com/",
         "path": "assets/enderio/lang"
       },
       {
         "name": "Enderstorage",
         "version": "1.4.3.3",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/909223",
         "path": "assets/enderstorage/lang"
       },
       {
         "name": "EquivalentExchange3",
         "version": "0.1.129",
         "contributors": "サーモン2号",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1540010",
         "path": "assets/ee3/lang"
       },
       {
         "name": "ExtraCells",
         "version": "1.6.7d",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1801643",
         "path": "assets/extracells/lang"
       },
       {
         "name": "ExtraTiC",
         "version": "0.7.6",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1985397",
         "path": "assets/extratic/lang"
       },
       {
         "name": "Factorization",
         "version": "0.8.04β13",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1351802",
         "path": "assets/factorization/lang"
       },
       {
         "name": "ForestryForMinecraft",
         "version": "2.3.1.0",
-        "url": "",
+        "url": "http://forestry.sengir.net/wiki.new/doku.php",
         "advanced":
           {
             "type": "zip",
@@ -227,19 +232,19 @@
         "name": "ForgeMultiPart",
         "version": "1.0.0.240",
         "contributors": "くらぅん",
-        "url": "",
+        "url": "http://files.minecraftforge.net/ForgeMultipart/",
         "path": "assets/microblock/lang"
       },
       {
         "name": "FrogCraft",
         "version": "1.6.2",
-        "url": "",
+        "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=10447",
         "path": "assets/frogcraft/lang"
       },
       {
         "name": "Gregtech",
         "version": "4.04l",
-        "url": "",
+        "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=7156&",
         "advanced":
           {
             "type": "config",
@@ -249,7 +254,7 @@
       {
         "name": "Gregtech",
         "version": "4.08s",
-        "url": "",
+        "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=7156&",
         "advanced":
           {
             "type": "config",
@@ -259,32 +264,32 @@
       {
         "name": "Immbis'sPerpherals",
         "version": "56.0.1・57.0.1",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_peripherals/lang"
       },
       {
         "name": "ImmibisCore",
         "version": "56.0.5",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_core/lang"
       },
       {
         "name": "ImmibisCore",
         "version": "57.1.92",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_core/lang"
       },
       {
         "name": "Immbis'sMicroblocks",
         "version": "56.0.5・57.5.0",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_microblocks/lang"
       },
       {
         "name": "IndustrialCraft2",
         "version": "1.118.401-lf",
         "contributors": "Sdaru241",
-        "url": "",
+        "url": "http://ic2api.player.to:8080/job/IC2_lf/",
         "advanced":
           {
             "type": "zip",
@@ -295,7 +300,7 @@
         "name": "IndustrialCraft2",
         "version": "ex.2.0.397",
         "contributors": "小咲みずあき",
-        "url": "",
+        "url": "http://ic2api.player.to:8080/job/IC2_lf/",
         "advanced":
           {
             "type": "zip",
@@ -306,21 +311,21 @@
         "name": "IronChest",
         "version": "5.3.14・5.4.1",
         "contributors": "サーモン2号",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/981855",
         "path": "assets/ironchest/lang"
       },
       {
         "name": "LaserMod",
         "version": "1.0.0",
         "contributors": "くらぅん",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/2209405",
         "path": "assets/lasermod/lang"
       },
       {
         "name": "LogisticsPipes",
         "version": "0.7.4.dev98",
         "contributors": "小咲みずあき",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/1831791",
         "advanced":
           {
             "type": "zip",
@@ -331,7 +336,7 @@
         "name": "MineFactoryReloaded2",
         "version": "2.7.6",
         "contributors": "小咲みずあき",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/2016680",
         "advanced":
           {
             "type": "config",
@@ -342,13 +347,13 @@
         "name": "MystCraft",
         "version": "0.10.7・0.10.11",
         "contributors": "123ぉこｐ",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/918541",
         "path": "assets/mystcraft/lang"
       },
       {
         "name": "NEIPlugins",
         "version": "1.1.0.6",
-        "url": "",
+        "url": "https://bitbucket.org/mistaqur/nei_plugins",
         "path":
         [
           "assets/neiplugins/lang",
@@ -359,7 +364,7 @@
         "name": "NetherOres",
         "version": "2.2.2",
         "contributors": "小咲みずあき",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/2016680",
         "advanced":
           {
             "type": "config",
@@ -370,70 +375,70 @@
         "name": "NHAVE'sOmniWrench",
         "version": "1.0.5",
         "contributors": "サーモン2号",
-        "url": "",
+        "url": "http://minecraft.curseforge.com/mc-mods/65886",
         "path": "assets/nhwrench/lang"
       },
       {
         "name": "NotEnoughItems",
         "version": "1.6.1.4・1.6.1.8",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/909223",
         "path": "assets/nei/lang"
       },
       {
         "name": "NuclearControl",
         "version": "1.6.2b・1.6.2e",
-        "url": "",
+        "url": "http://forum.industrial-craft.net/?page=Thread&threadID=5915",
         "path": "assets/nuclearcontrol/lang"
       },
       {
         "name": "OpenBlocks",
         "version": "1.2.4",
         "contributors": "missing229",
-        "url": "",
+        "url": "http://www.openmods.info/",
         "path": "assets/openblocks/lang"
       },
       {
         "name": "PowerConverters",
         "version": "1.6.4",
         "contributors": "小咲みずあき",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1287961",
         "path": "assets/powerconverters/lang"
       },
       {
         "name": "ProjectRed",
         "version": "4.0.1.4",
-        "url": "",
+        "url": "http://projectredwiki.com/wiki/Main_Page",
         "path": "assets/projectred/lang"
       },
       {
         "name": "ProjectRed",
         "version": "4.2.2.19",
-        "url": "",
+        "url": "http://projectredwiki.com/wiki/Main_Page",
         "path": "assets/projectred/lang"
       },
       {
         "name": "RedLogic",
         "version": "56.1.1",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1444476",
         "path": "assets/redlogic/lang"
       },
       {
         "name": "RedLogic",
         "version": "57.2.8",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1444476",
         "path": "assets/redlogic/lang"
       },
       {
         "name": "RedstoneArsenal",
         "version": "1.0.0.0",
         "contributors": "サーモン2号",
-        "url": "",
+        "url": "http://teamcofh.com/redstone-arsenal/",
         "path": "assets/redstonearsenal/lang"
       },
       {
         "name": "RemoteIO",
         "version": "1.9.1-b14",
-        "url": "",
+        "url": "http://www.minecraftforum.net/topic/2038242",
         "advanced":
           {
             "type": "config",
@@ -443,80 +448,86 @@
       {
         "name": "Steve'sCarts",
         "version": "2.0.0.b10",
-        "url": "",
+        "url": "http://minecraft.curseforge.com/mc-mods/228625",
         "path": "assets/stevecarts/lang"
       },
       {
         "name": "TerraFirmaCraft",
         "version": "0.77.22",
-        "url": "",
+        "url": "http://terrafirmacraft.com/",
         "path": "assets/terrafirmacraft/lang"
       },
       {
-        "name": "ThermalExpansion",
+        "name": "TheErebus",
+        "version": "0.1.1a",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1287600",
+        "path": "assets/erebus/lang"
+      },
+      {
+        "name": "ThermalExpansion3",
         "version": "3.0.0.2",
         "contributors": "小咲みずあき",
-        "url": "",
+        "url": "http://teamcofh.com/thermal-expansion/",
         "path": "assets/thermalexpansion/lang"
       },
       {
         "name": "Tinkers'Construct",
         "version": "1.5.4d3",
         "contributors": "dentigami",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1287648",
         "path": "assets/tinker/lang"
       },
       {
         "name": "Tinkers'Mechworks",
         "version": "0.1.4",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1446244",
         "path": "assets/tmechworks/lang"
       },
       {
         "name": "Translocator",
         "version": "1.1.0.12・1.1.0.13",
         "contributors": "missing229",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1279956",
         "path": "assets/translocator/lang"
       },
       {
         "name": "TubeStuff",
         "version": "56.0.3・57.1.3",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1281065",
         "path": "assets/tubestuff/lang"
       },
       {
         "name": "UndergroundBiomes・UnderGroundBiomesConstructs",
         "version": "0.4.2c・0.2",
         "contributors": "dentigami",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1287082",
         "path": "assets/undergroundbiomes/lang"
       },
       {
         "name": "UsefulFood",
         "version": "1.4.4",
         "contributors": "wagasi03",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1284835",
         "path": "assets/usefulfood/lang"
       },
       {
         "name": "Waila",
         "version": "1.4.5",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1289765",
         "path": "assets/waila/lang"
       },
       {
         "name": "WildCaves",
         "version": "0.4.3.4",
         "contributors": "くらぅん",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1442430",
         "path": "assets/wildcaves3/lang"
       },
       {
         "name": "WR-CBE",
         "version": "1.4.0.5・1.4.0.6",
         "contributors": "missing229",
-        "url": "",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1279956",
         "path":
           [
             "assets/wrcbe_addons/lang",
@@ -539,7 +550,7 @@
       },
       {
         "title": "導入方法",
-        "description": "この「S_lang_files_Ex_****.zip」を展開して、中にある.minecraftフォルダを\n.minecraft（Minecraft.exeのあるフォルダ）に導入してください。\n（「上書きしますか？」と出たら「はい」をクリックしてください）",
+        "description": "この「S_lang_files_Ex_1.6.x_****.zip」を展開して、中にある.minecraftフォルダを\n.minecraft（Minecraft.exeのあるフォルダ）に導入してください。\n（「上書きしますか？」と出たら「はい」をクリックしてください）",
         "type": "2"
       },
       {
