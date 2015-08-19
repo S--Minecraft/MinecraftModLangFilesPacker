@@ -1,0 +1,4 @@
+[bg2=#0000FF][size=130][color=#FFFFFF]#{配布対応本体バージョン}[/color][/size][/bg2]
+[list]
+[*][url=#{url}]#{mod名}[/url]・・・#{modバージョン}(#{本体バージョン}) Thanks, #{貢献者名}さん #{note}
+[/list]
