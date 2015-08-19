@@ -1,14 +1,15 @@
 {
   "pack-version": "",
-  "minecraft-version":
-    [
-      ""
-    ],
+  "minecraft-version": "",
   "mods":
     [
       {
         "name": "",
         "version": "",
+        "minecraft-version":
+          [
+            ""
+          ],
         "contributors": "",
         "path": "",
         "advanced":
@@ -22,7 +23,11 @@
     [
       {
         "title": "",
-        "description": ""
+        "description": "",
+        "type":
+          [
+            ""
+          ]
       }
     ]
 }

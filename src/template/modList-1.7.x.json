@@ -1,32 +1,45 @@
 {
   "pack-version": "3.0.0",
-  "minecraft-version":
-    [
-      "1.7.2",
-      "1.7.10"
-    ],
+  "minecraft-version":"1.7.x",
   "mods":
     [
       {
         "name": "エンドロールのクレジット&エンドポエム",
         "version": "1.7.x",
+        "minecraft-version":
+          [
+            "1.7.2",
+            "1.7.10"
+          ],
         "path": "assets/minecraft/lang",
       },
       {
         "name": "AppliedEnergistics2",
         "version": "rv0b18",
+        "minecraft-version":
+          [
+            "1.7.2"
+          ],
         "url": "http://ae2.ae-mod.info/",
         "path": "assets/appliedenergistics2/lang"
       },
       {
         "name": "BuildCraft",
         "version": "5.0.2",
+        "minecraft-version":
+          [
+            "1.7.2"
+          ],
         "url": "http://www.mod-buildcraft.com/",
         "path": "assets/buildcraft/lang"
       },
       {
         "name": "Chisel2",
         "version": "2.3.5.31",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "negitoro",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2254671",
         "path": "assets/chisel/lang"
@@ -34,6 +47,10 @@
       {
         "name": "CogsOfTheMachine",
         "version": "0.14pre1",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "おかもち",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1442605",
         "path": "assets/cogs/lang"
@@ -41,6 +58,10 @@
       {
         "name": "CustomNPCs",
         "version": "1.7.10b",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "tokikome",
         "url": "http://www.minecraftforum.net/topic/833003",
         "path": "assets/customnpcs/lang"
@@ -48,6 +69,10 @@
       {
         "name": "EnhancedBiomes",
         "version": "pre-2.4a",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "Mintmoon",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1294692",
         "path": "assets/enhancedbiomes/lang"
@@ -55,6 +80,10 @@
       {
         "name": "FallingMeteors",
         "version": "2.13.1",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "Mintmoon",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1280918",
         "path": "assets/meteors/lang"
@@ -62,12 +91,20 @@
       {
         "name": "HardcoreQuestingMode",
         "version": "1.6.2",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "url": "http://minecraft.curseforge.com/mc-mods/77027",
         "path": "assets/hqm/lang"
       },
       {
         "name": "Metallurgy",
         "version": "4.6.80",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "hyakulei0743",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1295123",
         "path": "assets/metallurgy/lang"
@@ -75,6 +112,10 @@
       {
         "name": "MetallurgyCore",
         "version": "4.0.4.18",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "hyakulei0743",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1295123",
         "path": "assets/metallurgycore/lang"
@@ -82,6 +123,10 @@
       {
         "name": "MrCrayfish'sFurnitureMod",
         "version": "3.3.6",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "akstn37",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1282349",
         "path": "assets/cfm/lang"
@@ -89,6 +134,10 @@
       {
         "name": "Pam'sHarvestCraft",
         "version": "1.7.10a",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "Mintmoon",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1274678",
         "path": "assets/harvestcraft/lang"
@@ -96,6 +145,10 @@
       {
         "name": "SteelIndustries",
         "version": "0.5c",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "くらぅん",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1446339",
         "path": "assets/steelindustries/lang"
@@ -103,6 +156,10 @@
       {
         "name": "Tinkers'Construct",
         "version": "1.6.0a5",
+        "minecraft-version":
+          [
+            "1.7.2"
+          ],
         "contributors": "dentigami",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1287648",
         "path": "assets/tinker/lang"
@@ -110,12 +167,20 @@
       {
         "name": "Tinkers'Mechworks",
         "version": "0.1.5",
+        "minecraft-version":
+          [
+            "1.7.2"
+          ],
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1446244",
         "path": "assets/tmechworks/lang"
       },
       {
         "name": "TwilightForest",
         "version": "2.0.3",
+        "minecraft-version":
+          [
+            "1.7.2"
+          ],
         "contributors": "Sdaru241",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1276258",
         "path": "assets/twilightforest/lang"
@@ -123,6 +188,10 @@
       {
         "name": "TwilightForest",
         "version": "2.0.3",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "Sdaru241",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1276258",
         "path": "assets/twilightforest/lang"
@@ -130,9 +199,14 @@
       {
         "name": "Witchery",
         "version": "0.20.5",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
         "contributors": "tokikome",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1445248",
-        "path": "assets/witchery/lang"
+        "path": "assets/witchery/lang",
+        "note": "(本など一部翻訳されていません)"
       }
     ],
   "cautions":

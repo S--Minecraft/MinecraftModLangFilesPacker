@@ -1,25 +1,35 @@
 {
   "pack-version": "4.0.0",
-  "minecraft-version":
-    [
-      "1.6.2",
-      "1.6.4"
-    ],
+  "minecraft-version": "1.6.x",
   "mods":
     [
       {
         "name": "1.6.x用バニラアイテム翻訳修正パッチ",
         "version": "1.6.x",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "path": "assets/minecraft/lang",
       },
       {
         "name": "エンドロールのクレジット&エンドポエム",
         "version": "1.6.x",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "path": "assets/minecraft/lang",
       },
       {
         "name": "AdditionalBuildcraftObjects",
         "version": "1.0.6.1.7.4",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://www.siedler25.org/uploads/minecraft/AdditionalBuildcraftObjects/",
         "advanced":
           {
@@ -30,6 +40,11 @@
       {
         "name": "AdditionalPipes",
         "version": "2.6.0",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
         "url": "https://github.com/tcooc/AdditionalPipesBC/releases",
         "advanced":
@@ -41,6 +56,10 @@
       {
         "name": "AdvancedMachines",
         "version": "exprecode_1.6.4",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
         "url": "http://atomicstryker.net/advancedmachines.php",
         "path": "assets/advancedmachines/lang"
@@ -48,18 +67,30 @@
       {
         "name": "AdvancedMachines",
         "version": "IC2 1.118(NOT exp)",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://atomicstryker.net/advancedmachines.php",
         "path": "assets/advancedmachines/lang"
       },
       {
         "name": "AdvancedReactors",
         "version": "1.0.0pre2",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=9212",
         "path": "assets/advancedreactors/lang"
       },
       {
         "name": "AppliedEnergistics",
         "version": "rv13c",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "contributors": "hekaton",
         "url": "http://ae1.ae-mod.info/",
         "path": "assets/appeng/lang",
@@ -72,13 +103,23 @@
       {
         "name": "ArsMagica2",
         "version": "1.1.1c",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "ryuoryu",
         "url": "http://www.minecraftforum.net/topic/2028696",
         "path": "assets/arsmagica/lang"
       },
       {
         "name": "Balkon'sWeaponMod",
-        "version": "1.13.6"
+        "version": "1.13.6",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "xyzzy",
         "url": "http://www.minecraftforum.net/topic/211517",
         "path": "assets/weaponmod/lang",
@@ -91,6 +132,11 @@
       {
         "name": "BetterStorage",
         "version": "0.7.3.38",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "くらぅん",
         "url": "http://www.minecraftforum.net/topic/1548203",
         "path": "assets/betterstorage/lang"
@@ -98,18 +144,32 @@
       {
         "name": "BiblioCraft",
         "version": "1.4.1",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://www.minecraftforum.net/topic/1680480",
         "path": "assets/biliocraft/lang"
       },
       {
         "name": "BigReactors",
         "version": "0.2.14A",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.big-reactors.com/",
         "path": "assets/bigreactors/lang"
       },
       {
         "name": "BiomesO'Plenty",
         "version": "1.2.1.434",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "dentigami",
         "url": "http://www.minecraftforum.net/topic/1495041",
         "path": "assets/biomesoplenty/lang"
@@ -117,12 +177,22 @@
       {
         "name": "BloodMagic",
         "version": "1.0.0",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/1899223",
         "path": "assets/alchemicalwizardry/lang"
       },
       {
         "name": "BuildCraft",
         "version": "4.2.2",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
         "url": "http://www.mod-buildcraft.com/",
         "advanced":
@@ -134,42 +204,75 @@
       {
         "name": "BuildCraftTools",
         "version": "1.4a-15",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/1728544",
         "path": "assets/bctools/lang"
       },
       {
         "name": "Chargepads",
         "version": "2.8.0.93",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://forum.industrial-craft.net/?page=Thread&threadID=7892",
         "path": "assets/chargepads/lang"
       },
       {
         "name": "ChickenChunks",
         "version": "1.3.3.2・1.3.3.4",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/909223",
         "path": "assets/chickenchunks/lang"
       },
       {
         "name": "CoFHCore",
         "version": "2.0.0.0",
-        "url": "http://teamcofh.com/core-mods/cofhcore/",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
+        "url": "http://teamcofh.com/",
         "path": "assets/cofh/lang"
       },
       {
-        "name": "Compactsolars",
+        "name": "CompactSolars",
         "version": "4.4.11.114",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://forum.industrial-craft.net/?page=Thread&threadID=4827",
         "path": "assets/compactsolars/lang"
       },
       {
         "name": "CompactWindmills",
         "version": "1.0.2.3",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=9205",
         "path": "assets/compactwindmills/lang"
       },
       {
         "name": "CustomNPCs",
-        "version": "1.6.2",
+        "version": "1.6.2/1.6.4",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "ゲスト",
         "url": "http://www.minecraftforum.net/topic/833003",
         "path": "assets/customnpcs/lang"
@@ -177,12 +280,21 @@
       {
         "name": "DimensionalAnchor",
         "version": "56.0.1",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/dimanchor/lang"
       },
       {
         "name": "EnderIO",
         "version": "1.0.0",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
         "url": "http://enderio.com/",
         "path": "assets/enderio/lang"
@@ -190,12 +302,22 @@
       {
         "name": "Enderstorage",
         "version": "1.4.3.3",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/909223",
         "path": "assets/enderstorage/lang"
       },
       {
         "name": "EquivalentExchange3",
         "version": "0.1.129",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "サーモン2号",
         "url": "http://www.minecraftforum.net/topic/1540010",
         "path": "assets/ee3/lang"
@@ -203,24 +325,42 @@
       {
         "name": "ExtraCells",
         "version": "1.6.7d",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://www.minecraftforum.net/topic/1801643",
         "path": "assets/extracells/lang"
       },
       {
         "name": "ExtraTiC",
         "version": "0.7.6",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/1985397",
         "path": "assets/extratic/lang"
       },
       {
         "name": "Factorization",
         "version": "0.8.04β13",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://www.minecraftforum.net/topic/1351802",
         "path": "assets/factorization/lang"
       },
       {
         "name": "ForestryForMinecraft",
-        "version": "2.3.1.0",
+        "version": "2.3.1.1",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://forestry.sengir.net/wiki.new/doku.php",
         "advanced":
           {
@@ -230,64 +370,106 @@
       },
       {
         "name": "ForgeMultiPart",
-        "version": "1.0.0.240",
+        "version": "1.0.0.250",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "くらぅん",
         "url": "http://files.minecraftforge.net/ForgeMultipart/",
         "path": "assets/microblock/lang"
       },
       {
         "name": "FrogCraft",
-        "version": "1.6.2",
+        "version": "1.2",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=10447",
         "path": "assets/frogcraft/lang"
       },
       {
         "name": "Gregtech",
         "version": "4.04l",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=7156&",
         "advanced":
           {
             "type": "config",
             "path": "GregTech"
-          }
+          },
+        "note": "[lf用最終版]"
       },
       {
         "name": "Gregtech",
         "version": "4.08s",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
         "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=7156&",
         "advanced":
           {
             "type": "config",
             "path": "GregTech"
-          }
+          },
+        "note": "[ex用1.6.x最終版]"
       },
       {
         "name": "Immbis'sPerpherals",
         "version": "56.0.1・57.0.1",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_peripherals/lang"
       },
       {
         "name": "ImmibisCore",
         "version": "56.0.5",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_core/lang"
       },
       {
         "name": "ImmibisCore",
         "version": "57.1.92",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_core/lang"
       },
       {
         "name": "Immbis'sMicroblocks",
-        "version": "56.0.5・57.5.0",
+        "version": "56.0.5・57.6.4",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_microblocks/lang"
       },
       {
         "name": "IndustrialCraft2",
         "version": "1.118.401-lf",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "contributors": "Sdaru241",
         "url": "http://ic2api.player.to:8080/job/IC2_lf/",
         "advanced":
@@ -299,17 +481,27 @@
       {
         "name": "IndustrialCraft2",
         "version": "ex.2.0.397",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
         "url": "http://ic2api.player.to:8080/job/IC2_lf/",
         "advanced":
           {
             "type": "zip",
             "path": "ic2"
-          }
+          },
+        "note": "[1.6.x最終版]"
       },
       {
-        "name": "IronChest",
+        "name": "IronChests",
         "version": "5.3.14・5.4.1",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "サーモン2号",
         "url": "http://www.minecraftforum.net/topic/981855",
         "path": "assets/ironchest/lang"
@@ -317,6 +509,11 @@
       {
         "name": "LaserMod",
         "version": "1.0.0",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "くらぅん",
         "url": "http://www.minecraftforum.net/topic/2209405",
         "path": "assets/lasermod/lang"
@@ -324,6 +521,10 @@
       {
         "name": "LogisticsPipes",
         "version": "0.7.4.dev98",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
         "url": "http://www.minecraftforum.net/topic/1831791",
         "advanced":
@@ -335,6 +536,11 @@
       {
         "name": "MineFactoryReloaded2",
         "version": "2.7.6",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
         "url": "http://www.minecraftforum.net/topic/2016680",
         "advanced":
@@ -346,6 +552,11 @@
       {
         "name": "MystCraft",
         "version": "0.10.7・0.10.11",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "123ぉこｐ",
         "url": "http://www.minecraftforum.net/topic/918541",
         "path": "assets/mystcraft/lang"
@@ -353,6 +564,11 @@
       {
         "name": "NEIPlugins",
         "version": "1.1.0.6",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "https://bitbucket.org/mistaqur/nei_plugins",
         "path":
         [
@@ -363,6 +579,11 @@
       {
         "name": "NetherOres",
         "version": "2.2.2",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
         "url": "http://www.minecraftforum.net/topic/2016680",
         "advanced":
@@ -374,6 +595,10 @@
       {
         "name": "NHAVE'sOmniWrench",
         "version": "1.0.5",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "contributors": "サーモン2号",
         "url": "http://minecraft.curseforge.com/mc-mods/65886",
         "path": "assets/nhwrench/lang"
@@ -381,18 +606,32 @@
       {
         "name": "NotEnoughItems",
         "version": "1.6.1.4・1.6.1.8",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/909223",
         "path": "assets/nei/lang"
       },
       {
         "name": "NuclearControl",
         "version": "1.6.2b・1.6.2e",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://forum.industrial-craft.net/?page=Thread&threadID=5915",
         "path": "assets/nuclearcontrol/lang"
       },
       {
         "name": "OpenBlocks",
         "version": "1.2.4",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "missing229",
         "url": "http://www.openmods.info/",
         "path": "assets/openblocks/lang"
@@ -400,6 +639,11 @@
       {
         "name": "PowerConverters",
         "version": "1.6.4",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1287961",
         "path": "assets/powerconverters/lang"
@@ -407,37 +651,62 @@
       {
         "name": "ProjectRed",
         "version": "4.0.1.4",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://projectredwiki.com/wiki/Main_Page",
         "path": "assets/projectred/lang"
       },
       {
         "name": "ProjectRed",
         "version": "4.2.2.19",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
         "url": "http://projectredwiki.com/wiki/Main_Page",
         "path": "assets/projectred/lang"
       },
       {
         "name": "RedLogic",
         "version": "56.1.1",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1444476",
         "path": "assets/redlogic/lang"
       },
       {
         "name": "RedLogic",
         "version": "57.2.8",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1444476",
         "path": "assets/redlogic/lang"
       },
       {
         "name": "RedstoneArsenal",
         "version": "1.0.0.0",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
         "contributors": "サーモン2号",
-        "url": "http://teamcofh.com/redstone-arsenal/",
+        "url": "http://teamcofh.com/",
         "path": "assets/redstonearsenal/lang"
       },
       {
         "name": "RemoteIO",
         "version": "1.9.1-b14",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/topic/2038242",
         "advanced":
           {
@@ -448,31 +717,54 @@
       {
         "name": "Steve'sCarts",
         "version": "2.0.0.b10",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://minecraft.curseforge.com/mc-mods/228625",
         "path": "assets/stevecarts/lang"
       },
       {
         "name": "TerraFirmaCraft",
         "version": "0.77.22",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
         "url": "http://terrafirmacraft.com/",
         "path": "assets/terrafirmacraft/lang"
       },
       {
         "name": "TheErebus",
         "version": "0.1.1a",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1287600",
         "path": "assets/erebus/lang"
       },
       {
         "name": "ThermalExpansion3",
         "version": "3.0.0.2",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
         "contributors": "小咲みずあき",
-        "url": "http://teamcofh.com/thermal-expansion/",
+        "url": "http://teamcofh.com/",
         "path": "assets/thermalexpansion/lang"
       },
       {
         "name": "Tinkers'Construct",
         "version": "1.5.4d3",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "dentigami",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1287648",
         "path": "assets/tinker/lang"
@@ -480,12 +772,22 @@
       {
         "name": "Tinkers'Mechworks",
         "version": "0.1.4",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1446244",
         "path": "assets/tmechworks/lang"
       },
       {
         "name": "Translocator",
         "version": "1.1.0.12・1.1.0.13",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "missing229",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1279956",
         "path": "assets/translocator/lang"
@@ -493,12 +795,22 @@
       {
         "name": "TubeStuff",
         "version": "56.0.3・57.1.3",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1281065",
         "path": "assets/tubestuff/lang"
       },
       {
         "name": "UndergroundBiomes・UnderGroundBiomesConstructs",
         "version": "0.4.2c・0.2",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "dentigami",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1287082",
         "path": "assets/undergroundbiomes/lang"
@@ -506,6 +818,11 @@
       {
         "name": "UsefulFood",
         "version": "1.4.4",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "wagasi03",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1284835",
         "path": "assets/usefulfood/lang"
@@ -513,12 +830,22 @@
       {
         "name": "Waila",
         "version": "1.4.5",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1289765",
         "path": "assets/waila/lang"
       },
       {
         "name": "WildCaves",
         "version": "0.4.3.4",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "くらぅん",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1442430",
         "path": "assets/wildcaves3/lang"
@@ -526,6 +853,11 @@
       {
         "name": "WR-CBE",
         "version": "1.4.0.5・1.4.0.6",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
         "contributors": "missing229",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1279956",
         "path":

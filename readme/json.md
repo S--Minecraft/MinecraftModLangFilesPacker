@@ -1,15 +1,17 @@
 # jsonファイルの書き方
 - pack-version 配布バージョン名
-- minecraft-version 対応マイクラバージョン名の配列
+- minecraft-version 対応本体バージョン
 - mods 対応modの配列
  - name mod名
  - version 対応バージョン
+ - minecraft-version 対応本体バージョンの配列
  - contributors 貢献した人たち (省略可)
  - url 配布url (省略可)
  - path langファイルの場所 (省略可)(配列でも可)
  - advanced configやzipへの導入が必要かどうか(省略可)
     - type configへ導入するかzipへ導入するか
     - path その導入する場所
+ - note BBCode出力するそのmodに関する注意(省略可)
 - cautions 注意書き
  - title タイトル
  - description 説明
