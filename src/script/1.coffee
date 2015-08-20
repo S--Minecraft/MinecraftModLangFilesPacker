@@ -23,12 +23,9 @@ exports.output = (json, callback) ->
           when "config" then path = "To_config"
           else console.log "Error: Unknown advanced.type"
         # ファイル指定時
-        if mod.advanced.file?
-          fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/#{mod.advanced.file}",
-                      "../../temp/#{minecraftVer} - #{packVer} - 1/#{path}/#{mod.name} - #{mod.version}/#{mod.advanced.file}")
-        else
-          fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}",
-                      "../../temp/#{minecraftVer} - #{packVer} - 1/#{path}/#{mod.name} - #{mod.version}")
+        if mod.advanced.file? then fileName = mod.advanced.file else fileName = ""
+        fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/#{fileName}",
+                    "../../temp/#{minecraftVer} - #{packVer} - 1/#{path}/#{mod.name} - #{mod.version}/#{fileName}")
 
       if mod.path?
         # pathが配列の時
