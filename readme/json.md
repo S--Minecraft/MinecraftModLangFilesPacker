@@ -12,7 +12,7 @@
  - advanced configやzipへの導入が必要かどうか(省略可)
     - type configへ導入するかzipへ導入するか
     - path その導入する場所
-    - file pathとadvancedが両方ある場合に記述するadvancedのほうへ送るファイルの配列(ない場合はすべて)
+    - file pathとadvancedが両方ある場合に記述するadvancedのほうへ送るファイルの名前の文字列(ない場合はすべて)
  - note BBCode出力するそのmodに関する注意(省略可)
 - cautions 注意書き
  - title タイトル
