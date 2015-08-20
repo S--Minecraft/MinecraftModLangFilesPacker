@@ -897,7 +897,7 @@
       },
       {
         "title": "1.6.x用バニラアイテム翻訳修正パッチの導入方法",
-        "description": "非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。\r\nCrafterKina様のOptifineLocalizeFixを利用する場合は、こちらのバニラアイテム修正パッチのみを導入してください。",
+        "description": "非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。\r\nCrafterKina様のOptifineLocalizeFixを利用する場合は、\r\nこちらのバニラアイテム修正パッチのみを導入してください。",
         "type": "0"
       },
       {
@@ -927,7 +927,7 @@
       },
       {
         "title": "IndustrialCraft2の日本語翻訳ファイル導入時の注意",
-        "description": "IndustrialCraftのlangファイルについては、1.118-401-lfとついているほうがlf用、ついていないほうがex版となります。",
+        "description": "IndustrialCraftのlangファイルについては、1.118-401-lfとついているほうがlf用、\r\nついていないほうがex版となります。",
         "type": "0"
       },
       {
@@ -962,7 +962,7 @@
       },
       {
         "title": "ImmibisCore 56.0.5の日本語翻訳ファイル導入時の注意",
-        "description": "ImmibisCoreのlangファイルについては、56.0.5とついているほうが56.0.5用、ついていないほうが57.1.92用となります。",
+        "description": "ImmibisCoreのlangファイルについては、56.0.5とついているほうが56.0.5用、\r\nついていないほうが57.1.92用となります。",
         "type": "0"
       },
       {
