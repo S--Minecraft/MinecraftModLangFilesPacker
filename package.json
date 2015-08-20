@@ -24,6 +24,9 @@
     "url": "https://github.com/S--Minecraft/MinecraftModLangFilesPacker/issues"
   },
   "homepage": "https://github.com/S--Minecraft/MinecraftModLangFilesPacker",
+  "dependencies": {
+    "fs-extra": "*"
+  },
   "devDependencies": {
     "coffee-script": "*"
   }
