@@ -1,16 +1,17 @@
-sƒŠƒ“ƒNt
-MinecraftŒö®ƒz[ƒ€ƒy[ƒW
+
+ã€Šãƒªãƒ³ã‚¯ã€‹
+Minecraftå…¬å¼ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸
 ---https://minecraft.net/
 
-MinecraftŒö®“ú–{–óWiki
+Minecraftå…¬å¼æ—¥æœ¬è¨³Wiki
 ---http://minecraft-ja.gamepedia.com/Minecraft_Wiki
 
-Minecraft”ñŒö®“ú–{Wiki
+Minecraftéå…¬å¼æ—¥æœ¬Wiki
 ---http://www26.atwiki.jp/minecraft/
 
-ƒ}ƒCƒ“ƒNƒ‰ƒtƒg”ñŒö®“ú–{ƒ†[ƒU[ƒtƒH[ƒ‰ƒ€
+ãƒã‚¤ãƒ³ã‚¯ãƒ©ãƒ•ãƒˆéå…¬å¼æ—¥æœ¬ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒ•ã‚©ãƒ¼ãƒ©ãƒ 
 ---http://forum.minecraftuser.jp/index.php
 
--MOD‚Ìlangƒtƒ@ƒCƒ‹‚É‚æ‚é“ú–{Œê‰»‚Ìd•ûE”z•z‚ÌƒgƒsƒbƒN
- ilangƒtƒ@ƒCƒ‹‚ÌƒgƒsƒbƒNj
+-MODã®langãƒ•ã‚¡ã‚¤ãƒ«ã«ã‚ˆã‚‹æ—¥æœ¬èªåŒ–ã®ä»•æ–¹ãƒ»é…å¸ƒã®ãƒˆãƒ”ãƒƒã‚¯
+ ï¼ˆlangãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒˆãƒ”ãƒƒã‚¯ï¼‰
 ---http://forum.minecraftuser.jp/viewtopic.php?f=13&t=16447
