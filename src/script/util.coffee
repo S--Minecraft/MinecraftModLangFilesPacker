@@ -23,6 +23,10 @@ exports.existInArray = (arr, val) ->
 exports.isArray = (arr) ->
   return (arr instanceof Array)
 
+# 文字列かどうか
+exports.isString = (str) ->
+  return (typeof str is "string")
+
 # 配列または文字列に存在するかどうか
 exports.exist = (arr, val) ->
   if @isArray(arr)
@@ -37,13 +41,13 @@ exports.cautionTransform = (caution) ->
   return text
 
 # readme作成
-exports.makeReadmeText = (json, title) ->
+exports.makeReadmeText = (json, type, title) ->
   readmeBBefore = "////////////////////////////////////////////////////////////////\r\n"
   readmeBBefore += title
   readmeBefore = fs.readFileSync("../template/Readme-before.txt", {encoding: "utf8"})
   readmeCaution = ""
   for caution in json.cautions
-    if @exist(caution.type, "0")
+    if @exist(caution.type, type)
       readmeCaution += @cautionTransform(caution)
   readmeCredits = "《クレジット》\r\n"
   for mod in json.mods

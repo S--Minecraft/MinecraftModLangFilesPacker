@@ -6,6 +6,7 @@ fs = require "fs-extra"
 util = require "./util.js"
 
 exports.output = (json, callback) ->
+  type = 0
   packVer = json["pack-version"]
   minecraftVer = json["minecraft-version"]
 
@@ -20,12 +21,11 @@ exports.output = (json, callback) ->
 
   # readme作成
   title = "/lang_S_#{minecraftVer}(通常型)//////////////////////////////////by S/////"
-  readme = util.makeReadmeText(json,title)
+  readme = util.makeReadmeText(json, type, title)
   fs.writeFileSync("../../temp/#{minecraftVer} - #{packVer} - 0/Readme - 導入前に読んでください.txt",
                    readme)
 
   # zip
   outputName = "../../output/zip/lang_S_#{minecraftVer}_#{packVer}.zip"
-  type = 0
   util.zipUp(outputName, json, type, callback)
   return
