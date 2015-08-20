@@ -267,7 +267,7 @@
       },
       {
         "name": "CustomNPCs",
-        "version": "1.6.2/1.6.4",
+        "version": "1.6.2,1.6.4",
         "minecraft-version":
           [
             "1.6.2",
@@ -747,7 +747,7 @@
         "path": "assets/erebus/lang"
       },
       {
-        "name": "ThermalExpansion3",
+        "name": "ThermalExpansion",
         "version": "3.0.0.2",
         "minecraft-version":
           [
