@@ -97,7 +97,11 @@
         "advanced":
           {
             "type": "zip",
-            "path": "assets/appeng/lang"
+            "path": "assets/appeng/lang",
+            "file":
+              [
+                "lang.list"
+              ]
           }
       },
       {
@@ -126,7 +130,11 @@
         "advanced":
           {
             "type": "zip",
-            "path": "assets/weaponmod/lang"
+            "path": "assets/weaponmod/lang",
+            "file":
+              [
+                "lang.txt"
+              ]
           }
       },
       {
@@ -861,11 +869,11 @@
         "contributors": "missing229",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1279956",
         "path":
-          [
-            "assets/wrcbe_addons/lang",
-            "assets/wrcbe_core/lang",
-            "assets/wrcbe_logic/lang"
-          ]
+          {
+            "Addon": "assets/wrcbe_addons/lang",
+            "Core": "assets/wrcbe_core/lang",
+            "Logic": "assets/wrcbe_logic/lang"
+          }
       }
     ],
   "cautions":

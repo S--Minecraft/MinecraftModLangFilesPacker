@@ -15,7 +15,11 @@
         "advanced":
           {
             "type": "",
-            "path": ""
+            "path": "",
+            "file":
+              [
+                ""
+              ]
           }
       }
     ],
