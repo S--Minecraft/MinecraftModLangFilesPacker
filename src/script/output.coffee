@@ -19,8 +19,19 @@ exports.makeReadmeText = (json, type, title) ->
   readmeBefore = fs.readFileSync("../template/Readme-before.txt", {encoding: "utf8"})
   readmeCaution = ""
   for caution in json.cautions
-    if util.exist(caution.type, type)
+    if util.exist(caution.type, type.toString())
       readmeCaution += @cautionTransform(caution)
+  readmePath = ""
+  if type is 1 or type is 2
+    readmePath += "《配置場所(config/zip/jar)》\r\n"
+    for mod in json.mods
+      if mod.advanced?
+        readmePath += "#{mod.name}(#{mod.version}): "
+        if mod.advanced.type is "config" and type is 1
+          readmePath += ".minecraftフォルダ/config/#{mod.advanced.path}\r\n"
+        else if mod.advanced.type is "zip"
+          readmePath += "modのzipやjar/#{mod.advanced.path}\r\n"
+    readmePath += "\r\n"
   readmeCredits = "《クレジット》\r\n"
   for mod in json.mods
     if mod.contributors?
@@ -29,7 +40,7 @@ exports.makeReadmeText = (json, type, title) ->
   readmeAfter = fs.readFileSync("../template/Readme-after.txt", {encoding: "utf8"})
 
   readme = readmeBBefore + "\r\n" + readmeBefore + "\r\n"
-  readme += readmeCaution + readmeCredits + readmeAfter
+  readme += readmeCaution + readmePath + readmeCredits + readmeAfter
   return readme
 
 # zipをする
