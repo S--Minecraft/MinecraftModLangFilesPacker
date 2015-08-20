@@ -45,6 +45,21 @@ if isCompile17Need
   compileType172 = util.existInArray(compileType17, "2")
   compileType17b = util.existInArray(compileType17, "b")
 
+i = 0 #temp使用済み数
+j = 0 #temp使用予定数
+if compileType160 then j++
+if compileType161 then j++
+if compileType162 then j++
+if compileType170 then j++
+if compileType171 then j++
+if compileType172 then j++
+# tempフォルダ削除
+rmvTemp = () ->
+  i++
+  if i is j
+    fs.removeSync("../../temp")
+  return
+
 # 出力
 if isCompile16Need
   console.log "Output 1.6.x"
@@ -53,13 +68,13 @@ if isCompile16Need
   json16 = JSON.parse(jsonText16)
   if compileType160
     console.log "Output 1.6.x 通常型"
-    src0.output(json16)
+    src0.output(json16, rmvTemp)
   if compileType161
     console.log "Output 1.6.x リソースパック型"
-    src1.output(json16)
+    src1.output(json16, rmvTemp)
   if compileType162
     console.log "Output 1.6.x 直接導入型"
-    src2.output(json16)
+    src2.output(json16, rmvTemp)
   if compileType16b
     console.log "Output 1.6.x BBCode"
     srcBBcode.output(json16)
@@ -71,13 +86,13 @@ if isCompile17Need
   json17 = JSON.parse(jsonText17)
   if compileType170
     console.log "Output 1.7.x 通常型"
-    src0.output(json17)
+    src0.output(json17, rmvTemp)
   if compileType171
     console.log "Output 1.7.x リソースパック型"
-    src1.output(json17)
+    src1.output(json17, rmvTemp)
   if compileType172
     console.log "Output 1.7.x 直接導入型"
-    src2.output(json17)
+    src2.output(json17, rmvTemp)
   if compileType17b
     console.log "Output 1.7.x BBCode"
     srcBBcode.output(json17)

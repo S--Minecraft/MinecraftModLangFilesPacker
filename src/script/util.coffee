@@ -16,3 +16,9 @@ exports.existInArray = (arr, val) ->
   else
     return false
 
+# 配列または文字列に存在するかどうか
+exports.exist = (arr, val) ->
+  if arr instanceof Array
+    return @existInArray(arr, val)
+  else
+    return (arr is val)
