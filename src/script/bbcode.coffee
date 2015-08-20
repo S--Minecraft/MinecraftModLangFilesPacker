@@ -2,7 +2,7 @@
   bbcode.coffee
   BBcodeを生成します
 ###
-fs = require "fs"
+fs = require "fs-extra"
 
 exports.modJsonToBBcode = (modJson) ->
   bbcode = "[*]"

@@ -3,7 +3,7 @@
   実行本体
 ###
 # 使用モジュール
-fs = require "fs"
+fs = require "fs-extra"
 util = require "./util.js"
 
 # 実行ファイル一覧
