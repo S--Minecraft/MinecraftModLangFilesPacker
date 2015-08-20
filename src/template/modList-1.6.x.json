@@ -206,7 +206,7 @@
         "advanced":
           {
             "type": "zip",
-            "path": "buildcraft"
+            "path": "lang/buildcraft"
           }
       },
       {
@@ -373,7 +373,7 @@
         "advanced":
           {
             "type": "zip",
-            "path": "forestry"
+            "path": "lang/forestry"
           }
       },
       {
@@ -483,7 +483,7 @@
         "advanced":
           {
             "type": "zip",
-            "path": "ic2"
+            "path": "ic2/lang"
           }
       },
       {
@@ -498,7 +498,7 @@
         "advanced":
           {
             "type": "zip",
-            "path": "ic2"
+            "path": "ic2/lang"
           },
         "note": "[1.6.x最終版]"
       },
@@ -538,7 +538,7 @@
         "advanced":
           {
             "type": "zip",
-            "path": "logisticspipes"
+            "path": "lang/logisticspipes"
           }
       },
       {
@@ -554,7 +554,7 @@
         "advanced":
           {
             "type": "config",
-            "path": "MineFactoryReloaded"
+            "path": "powercrystals/MineFactoryReloaded/lang"
           }
       },
       {
@@ -597,7 +597,7 @@
         "advanced":
           {
             "type": "config",
-            "path": "NetherOres"
+            "path": "powercrystals/NetherOres/lang"
           }
       },
       {
@@ -719,7 +719,7 @@
         "advanced":
           {
             "type": "config",
-            "path": "RemoteIO"
+            "path": "RemoteIO/lang"
           }
       },
       {
