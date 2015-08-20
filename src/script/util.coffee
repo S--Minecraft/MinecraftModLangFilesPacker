@@ -2,6 +2,8 @@
   util.coffee
   Util
 ###
+fs = require "fs-extra"
+
 # indexOfの代用メソッド(高速化)
 exports.index = (arr, val) ->
   for a, i in arr
@@ -16,9 +18,40 @@ exports.existInArray = (arr, val) ->
   else
     return false
 
+# 配列かどうか
+exports.isArray = (arr) ->
+  return (arr instanceof Array)
+
 # 配列または文字列に存在するかどうか
 exports.exist = (arr, val) ->
-  if arr instanceof Array
+  if @isArray(arr)
     return @existInArray(arr, val)
   else
     return (arr is val)
+
+# cautionをテキストに変換
+exports.cautionTransform = (caution) ->
+  text = "《#{caution.title}》\r\n"
+  text += "#{caution.description}\r\n\r\n"
+  return text
+
+# readme作成
+exports.makeReadmeText = (json, title) ->
+  readmeBBefore = "////////////////////////////////////////////////////////////////\r\n"
+  readmeBBefore += title
+  readmeBefore = fs.readFileSync("../template/Readme-before.txt", {encoding: "utf8"})
+  readmeCaution = ""
+  for caution in json.cautions
+    if @exist(caution.type, "0")
+      readmeCaution += @cautionTransform(caution)
+  readmeCredits = "《クレジット》\r\n"
+  for mod in json.mods
+    if mod.contributors?
+      readmeCredits += "#{mod.name}のlangファイル\r\n"
+      readmeCredits += "-#{mod.contributors}様\r\n\r\n"
+  readmeAfter = fs.readFileSync("../template/Readme-after.txt", {encoding: "utf8"})
+
+  readme = readmeBBefore + "\r\n" + readmeBefore + "\r\n"
+  readme += readmeCaution + readmeCredits + readmeAfter
+  return readme
+

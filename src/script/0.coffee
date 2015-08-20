@@ -5,7 +5,6 @@
 fs = require "fs-extra"
 util = require "./util.js"
 archiver = require "archiver"
-del = require "del"
 
 # cautionをテキストに変換
 exports.cautionTransform = (caution) ->
@@ -24,26 +23,12 @@ exports.output = (json, callback) ->
     else
       folderName = mod.name + " - " + mod.version
       fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/",
-                  "../../temp/#{minecraftVer} - #{packVer}/#{folderName}/")
+                  "../../temp/#{minecraftVer} - #{packVer} - 0/#{folderName}/")
 
   # readme作成
-  readmeBBefore = "////////////////////////////////////////////////////////////////\r\n"
-  readmeBBefore += "/lang_S_#{minecraftVer}(通常型)//////////////////////////////////by S/////"
-  readmeBefore = fs.readFileSync("../template/Readme-before.txt", {encoding: "utf8"})
-  readmeCaution = ""
-  for caution in json.cautions
-    if util.exist(caution.type, "0")
-      readmeCaution += @cautionTransform(caution)
-  readmeCredits = "《クレジット》\r\n"
-  for mod in json.mods
-    if mod.contributors?
-      readmeCredits += "#{mod.name}のlangファイル\r\n"
-      readmeCredits += "-#{mod.contributors}様\r\n\r\n"
-  readmeAfter = fs.readFileSync("../template/Readme-after.txt", {encoding: "utf8"})
-
-  readme = readmeBBefore + "\r\n" + readmeBefore + "\r\n"
-  readme += readmeCaution + readmeCredits + readmeAfter
-  fs.writeFileSync("../../temp/#{minecraftVer} - #{packVer}/Readme - 導入前に読んでください.txt",
+  title = "/lang_S_#{minecraftVer}(通常型)//////////////////////////////////by S/////"
+  readme = util.makeReadmeText(json,title)
+  fs.writeFileSync("../../temp/#{minecraftVer} - #{packVer} - 0/Readme - 導入前に読んでください.txt",
                    readme)
 
   # zip
@@ -52,8 +37,8 @@ exports.output = (json, callback) ->
   outputZip.on("close", ->
     console.log "lang_S_#{minecraftVer}_#{packVer}.zip #{zip.pointer()} total bytes"
     # tempを削除する
-    if fs.existsSync("../../temp/#{minecraftVer} - #{packVer}")
-      fs.removeSync("../../temp/#{minecraftVer} - #{packVer}")
+    if fs.existsSync("../../temp/#{minecraftVer} - #{packVer} - 0")
+      fs.removeSync("../../temp/#{minecraftVer} - #{packVer} - 0")
     callback()
     return
   )
@@ -63,7 +48,7 @@ exports.output = (json, callback) ->
   )
   zip.pipe(outputZip)
   zip.bulk([
-    {expand: true, cwd: "../../temp/#{minecraftVer} - #{packVer}/", src: ["**"]}
+    {expand: true, cwd: "../../temp/#{minecraftVer} - #{packVer} - 0/", src: ["**"]}
   ])
   zip.finalize()
   return
