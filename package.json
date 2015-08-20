@@ -2,9 +2,18 @@
   "name": "MinecraftModLangFilesPacker",
   "version": "0.0.1",
   "description": "Packs langfiles for Minecraft's Mods.",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "*"
+  },
   "main": "src/script/core.coffee",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "files": [
+    "src",
+    "output"
+  ],
+  "bin":{
+    "minecraftmlfpack": "pack.bat",
+    "minecraftmlfcompile": "compile.bat"
   },
   "repository": {
     "type": "git",
