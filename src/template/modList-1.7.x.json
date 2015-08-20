@@ -213,22 +213,22 @@
     [
       {
         "title": "導入方法",
-        "description": "MODフォルダ(.zip/.jar)の中の指定の場所にlangファイルを入れてください。\n指定の場所については非公式日本ユーザーフォーラムの\nlangファイルのトピックをご覧ください。",
+        "description": "MODフォルダ(.zip/.jar)の中の指定の場所にlangファイルを入れてください。\r\n指定の場所については非公式日本ユーザーフォーラムの\r\nlangファイルのトピックをご覧ください。",
         "type": "0"
       },
       {
         "title": "導入方法",
-        "description": "この「S_lang_files_1.7.x_****.zip」をリソースパックの場所に置いて、\n以下の注意の通りにするだけです。",
+        "description": "この「S_lang_files_1.7.x_****.zip」をリソースパックの場所に置いて、\r\n以下の注意の通りにするだけです。",
         "type": "1"
       },
       {
         "title": "導入方法",
-        "description": "この「S_lang_files_1.7.x_Ex_****.zip」を展開して、中にある.minecraftフォルダを\n.minecraft（Minecraft.exeのあるフォルダ）に導入してください。\n（「上書きしますか？」と出たら「はい」をクリックしてください）",
+        "description": "この「S_lang_files_1.7.x_Ex_****.zip」を展開して、中にある.minecraftフォルダを\r\n.minecraft（Minecraft.exeのあるフォルダ）に導入してください。\r\n（「上書きしますか？」と出たら「はい」をクリックしてください）",
         "type": "2"
       },
       {
         "title": "バージョン確認",
-        "description": "導入されているバージョンを確認するにはリソースパックのフォルダの\n中の「S_lang_files_in_version.txt」をご覧ください。",
+        "description": "導入されているバージョンを確認するにはリソースパックのフォルダの\r\n中の「S_lang_files_in_version.txt」をご覧ください。",
         "type": "2"
       },
       {
@@ -243,7 +243,7 @@
       },
       {
         "title": "TwilightForest 2.0.3の日本語翻訳ファイル導入時の注意",
-        "description": "ダウンロードした地点では、TwilightForestの2.0.3用が有効になっています。\n2.0.3用を有効にするには、「ja_JP_2.0.3.lang」を「ja_JP.lang」に\nリネームしてください。\n元の2.3.2用の「ja_JP.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "description": "ダウンロードした地点では、TwilightForestの2.0.3用が有効になっています。\r\n2.0.3用を有効にするには、「ja_JP_2.0.3.lang」を「ja_JP.lang」に\r\nリネームしてください。\r\n元の2.3.2用の「ja_JP.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
         "type":
           [
             "1",
@@ -252,7 +252,7 @@
       },
       {
         "title": "報告・連絡",
-        "description": "翻訳できないや翻訳がおかしいなどの報告や連絡は\n非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。",
+        "description": "翻訳できないや翻訳がおかしいなどの報告や連絡は\r\n非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。",
         "type":
           [
             "0",

@@ -872,22 +872,22 @@
     [
       {
         "title": "導入方法",
-        "description": "MODフォルダ(.zip/.jar)の中の指定の場所にlangファイルを入れてください。\n指定の場所については非公式日本ユーザーフォーラムの\nlangファイルのトピックをご覧ください。",
+        "description": "MODフォルダ(.zip/.jar)の中の指定の場所にlangファイルを入れてください。\r\n指定の場所については非公式日本ユーザーフォーラムの\r\nlangファイルのトピックをご覧ください。",
         "type": "0"
       },
       {
         "title": "導入方法",
-        "description": "この「S_lang_files_1.6.x_****.zip」をリソースパックの場所に置いて、\n「To_Config」フォルダと「To_zip.jar」フォルダを\n別の場所に移して(zipからコピーしてzip内のものを削除)、\n以下の注意の通りにするだけです。",
+        "description": "この「S_lang_files_1.6.x_****.zip」をリソースパックの場所に置いて、\r\n「To_Config」フォルダと「To_zip.jar」フォルダを\r\n別の場所に移して(zipからコピーしてzip内のものを削除)、\r\n以下の注意の通りにするだけです。",
         "type": "1"
       },
       {
         "title": "導入方法",
-        "description": "この「S_lang_files_Ex_1.6.x_****.zip」を展開して、中にある.minecraftフォルダを\n.minecraft（Minecraft.exeのあるフォルダ）に導入してください。\n（「上書きしますか？」と出たら「はい」をクリックしてください）",
+        "description": "この「S_lang_files_Ex_1.6.x_****.zip」を展開して、中にある.minecraftフォルダを\r\n.minecraft（Minecraft.exeのあるフォルダ）に導入してください。\r\n（「上書きしますか？」と出たら「はい」をクリックしてください）",
         "type": "2"
       },
       {
         "title": "バージョン確認",
-        "description": "導入されているバージョンを確認するにはリソースパックのフォルダの\n中の「S_lang_files_in_version.txt」をご覧ください。",
+        "description": "導入されているバージョンを確認するにはリソースパックのフォルダの\r\n中の「S_lang_files_in_version.txt」をご覧ください。",
         "type": "2"
       },
       {
@@ -897,32 +897,32 @@
       },
       {
         "title": "1.6.x用バニラアイテム翻訳修正パッチの導入方法",
-        "description": "非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。\nCrafterKina様のOptifineLocalizeFixを利用する場合は、こちらのバニラアイテム修正パッチのみを導入してください。",
+        "description": "非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。\r\nCrafterKina様のOptifineLocalizeFixを利用する場合は、こちらのバニラアイテム修正パッチのみを導入してください。",
         "type": "0"
       },
       {
         "title": "Gregtech日本語翻訳ファイル導入時の注意",
-        "description": "Gregtechはlangファイルを.minecraft/config/gregtechに\n導入する必要があります。(上書き)\nまた、「Gregtech.lang」は4.08s用です。\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\nリネームした上で上記の通りに導入してください。\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "description": "Gregtechはlangファイルを.minecraft/config/gregtechに\r\n導入する必要があります。(上書き)\r\nまた、「Gregtech.lang」は4.08s用です。\r\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\r\nリネームした上で上記の通りに導入してください。\r\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
         "type": "0"
       },
       {
         "title": "Gregtech日本語翻訳ファイル導入時の注意",
-        "description": "Gregtechはこのリソースパックを導入しただけでは有効になりません。\n「To_Config」フォルダ内にある「Gregtech.lang」を.minecraft/config/gregtechに\n導入してください。(上書き)\nまた、「Gregtech.lang」は4.08s用です。\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\nリネームした上で上記の通りに導入してください。\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "description": "Gregtechはこのリソースパックを導入しただけでは有効になりません。\r\n「To_Config」フォルダ内にある「Gregtech.lang」を.minecraft/config/gregtechに\r\n導入してください。(上書き)\r\nまた、「Gregtech.lang」は4.08s用です。\r\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\r\nリネームした上で上記の通りに導入してください。\r\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
         "type": "1"
       },
       {
         "title": "Gregtech日本語翻訳ファイル導入時の注意",
-        "description": "ダウンロードした地点では、Gregtechの4.08s用が有効になっています。\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\nリネームした上で上記の通りに導入してください。\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "description": "ダウンロードした地点では、Gregtechの4.08s用が有効になっています。\r\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\r\nリネームした上で上記の通りに導入してください。\r\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
         "type": "2"
       },
       {
         "title": "RemoteIO日本語翻訳ファイル導入時の注意",
-        "description": "RemoteIOはlangファイルを.minecraft/config/remoteio/langに\n導入する必要があります。",
+        "description": "RemoteIOはlangファイルを.minecraft/config/remoteio/langに\r\n導入する必要があります。",
         "type": "0"
       },
       {
         "title": "RemoteIO日本語翻訳ファイル導入時の注意",
-        "description": "RemoteIOはこのリソースパックを導入しただけでは有効になりません。\n「To_Config」フォルダ内にある「ja_JP.properties」を\n.minecraft/config/remoteio/langに導入してください。",
+        "description": "RemoteIOはこのリソースパックを導入しただけでは有効になりません。\r\n「To_Config」フォルダ内にある「ja_JP.properties」を\r\n.minecraft/config/remoteio/langに導入してください。",
         "type": "1"
       },
       {
@@ -932,32 +932,32 @@
       },
       {
         "title": "IndustrialCraft2の日本語翻訳ファイル導入時の注意",
-        "description": "IndustrialCraft2はこのリソースパックを導入しただけでは\n有効になりません。「To_zip.jar」フォルダ内にある「ja_JP.properties」を\n通常導入してください。また、「ja_JP.properties」はex用です。\nlf用をご利用の方は、「ja_JP_1.118-401-lf.properties」を\n「ja_JP.properties」にリネームした上で上記の通りに導入してください。\n元のex用の「ja_JP.properties」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "description": "IndustrialCraft2はこのリソースパックを導入しただけでは\r\n有効になりません。「To_zip.jar」フォルダ内にある「ja_JP.properties」を\r\n通常導入してください。また、「ja_JP.properties」はex用です。\r\nlf用をご利用の方は、「ja_JP_1.118-401-lf.properties」を\r\n「ja_JP.properties」にリネームした上で上記の通りに導入してください。\r\n元のex用の「ja_JP.properties」については利用しないのであれば、\r\n上書きしても大丈夫です。",
         "type": "1"
       },
       {
         "title": "IndustrialCraft2の日本語翻訳ファイル導入時の注意",
-        "description": "IndustrialCraft2は導入しただけでは\n有効になりません。「To_zip.jar」フォルダ内にある「ja_JP.properties」を\n通常導入してください。また、「ja_JP.properties」はex用です。\nlf用をご利用の方は、「ja_JP_1.118-401-lf.properties」を\n「ja_JP.properties」にリネームした上で上記の通りに導入してください。\n元のex用の「ja_JP.properties」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "description": "IndustrialCraft2は導入しただけでは\r\n有効になりません。「To_zip.jar」フォルダ内にある「ja_JP.properties」を\r\n通常導入してください。また、「ja_JP.properties」はex用です。\r\nlf用をご利用の方は、「ja_JP_1.118-401-lf.properties」を\r\n「ja_JP.properties」にリネームした上で上記の通りに導入してください。\r\n元のex用の「ja_JP.properties」については利用しないのであれば、\r\n上書きしても大丈夫です。",
         "type": "2"
       },
       {
         "title": "MineFactoryReloaded2の日本語翻訳ファイル導入時の注意",
-        "description": "MineFactoryReloadedはlangファイルを\n.minecraft/config/powercrystals/minefactoryreloadedに\n導入する必要があります。",
+        "description": "MineFactoryReloadedはlangファイルを\r\n.minecraft/config/powercrystals/minefactoryreloadedに\r\n導入する必要があります。",
         "type": "0"
       },
       {
         "title": "MineFactoryReloaded2の日本語翻訳ファイル導入時の注意",
-        "description": "MineFactoryReloadedはこのリソースパックを導入しただけでは\n有効になりません。「To_Config」フォルダ内にある「ja_JP.lang」を\n.minecraft/config/powercrystals/minefactoryreloadedに\n導入してください。",
+        "description": "MineFactoryReloadedはこのリソースパックを導入しただけでは\r\n有効になりません。「To_Config」フォルダ内にある「ja_JP.lang」を\r\n.minecraft/config/powercrystals/minefactoryreloadedに\r\n導入してください。",
         "type": "1"
       },
       {
         "title": "NetherOresの日本語翻訳ファイル導入時の注意",
-        "description": "NetherOresはlangファイルを\n.minecraft/config/powercrystals/netheroresに\n導入する必要があります。",
+        "description": "NetherOresはlangファイルを\r\n.minecraft/config/powercrystals/netheroresに\r\n導入する必要があります。",
         "type": "0"
       },
       {
         "title": "NetherOresの日本語翻訳ファイル導入時の注意",
-        "description": "NetherOresはこのリソースパックを導入しただけでは\n有効になりません。「To_Config」フォルダ内にある「ja_JP.lang」を\n.minecraft/config/powercrystals/netheroresに\n導入してください。",
+        "description": "NetherOresはこのリソースパックを導入しただけでは\r\n有効になりません。「To_Config」フォルダ内にある「ja_JP.lang」を\r\n.minecraft/config/powercrystals/netheroresに\r\n導入してください。",
         "type": "1"
       },
       {
@@ -967,7 +967,7 @@
       },
       {
         "title": "ImmibisCore 56.0.5の日本語翻訳ファイル導入時の注意",
-        "description": "ダウンロードした地点では、ImmibisCoreの57.1.92用が有効になっています。\n56.0.5用を有効にするには、「ja_JP_56.0.5.lang」を「ja_JP.lang」に\nリネームしてください。\n元の57.1.92用の「ja_JP.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "description": "ダウンロードした地点では、ImmibisCoreの57.1.92用が有効になっています。\r\n56.0.5用を有効にするには、「ja_JP_56.0.5.lang」を「ja_JP.lang」に\r\nリネームしてください。\r\n元の57.1.92用の「ja_JP.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
         "type":
           [
             "1",
@@ -976,7 +976,7 @@
       },
       {
         "title": "RedLogic 56.1.1の日本語翻訳ファイル導入時の注意",
-        "description": "ダウンロードした地点では、RedLogicの57.2.8版が有効になっています。\n56.1.1版を有効にするには、「ja_JP_56.1.1.lang」を「ja_JP.lang」に\nリネームしてください。\n元の57.2.8用の「ja_JP.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "description": "ダウンロードした地点では、RedLogicの57.2.8版が有効になっています。\r\n56.1.1版を有効にするには、「ja_JP_56.1.1.lang」を「ja_JP.lang」に\r\nリネームしてください。\r\n元の57.2.8用の「ja_JP.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
         "type":
           [
             "1",
@@ -985,7 +985,7 @@
       },
       {
         "title": "ProjectRed 4.0.1.4の日本語翻訳ファイル導入時の注意",
-        "description": "ダウンロードした地点では、ProjectRedの4.2.2.19版が有効になっています。\n4.0.1.4版を有効にするには、「ja_JP_4.0.1.4.lang」を「ja_JP.lang」に\nリネームしてください。\n元の4.2.2.19用の「ja_JP.lang」については利用しないのであれば、\n上書きしても大丈夫です。",
+        "description": "ダウンロードした地点では、ProjectRedの4.2.2.19版が有効になっています。\r\n4.0.1.4版を有効にするには、「ja_JP_4.0.1.4.lang」を「ja_JP.lang」に\r\nリネームしてください。\r\n元の4.2.2.19用の「ja_JP.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
         "type":
           [
             "1",
@@ -993,8 +993,8 @@
           ]
       },
       {
-        "title": "AdditonalBuildcraftObjects・AdditionalPipes・AdvancedMachines 1.118(NOT ex)\n　ForestryForMinecraft・LogisticsPipes・Buildcraft日本語翻訳ファイル導入時の注意",
-        "description": "これらのlangファイルは導入しただけでは有効になりません。\n「To_zip.jar」フォルダ内のそれぞれのフォルダにある\n「ja_JP.lang」/「ja_JP.properties」を通常導入してください。",
+        "title": "AdditonalBuildcraftObjects・AdditionalPipes・AdvancedMachines 1.118(NOT ex)\r\n　ForestryForMinecraft・LogisticsPipes・Buildcraft日本語翻訳ファイル導入時の注意",
+        "description": "これらのlangファイルは導入しただけでは有効になりません。\r\n「To_zip.jar」フォルダ内のそれぞれのフォルダにある\r\n「ja_JP.lang」/「ja_JP.properties」を通常導入してください。",
         "type":
           [
             "1",
@@ -1003,7 +1003,7 @@
       },
       {
         "title": "AppliedEnergistics・Balkon'sWeaponMod日本語翻訳ファイル導入時の注意",
-        "description": "これらのlangファイルは導入しただけでは有効になりません。\n「To_zip.jar」フォルダ内のそれぞれのフォルダにある\n「lang.list」/「lang.txt」を通常導入してください。",
+        "description": "これらのlangファイルは導入しただけでは有効になりません。\r\n「To_zip.jar」フォルダ内のそれぞれのフォルダにある\r\n「lang.list」/「lang.txt」を通常導入してください。",
         "type":
           [
             "1",
@@ -1012,7 +1012,7 @@
       },
       {
         "title": "BigReactors・FrogCraftの日本語翻訳ファイル導入時の注意",
-        "description": "BigReactors,FrogCraftのlangファイルはen_US書き換え方式です。\n今後可能になったらja_JP型に直します。\n（en_US書き換え方式だからと言って英語を選択しなければ\n　翻訳されないわけではありません）",
+        "description": "BigReactors,FrogCraftのlangファイルはen_US書き換え方式です。\r\n今後可能になったらja_JP型に直します。\r\n（en_US書き換え方式だからと言って英語を選択しなければ\r\n　翻訳されないわけではありません）",
         "type":
           [
             "0",
@@ -1022,7 +1022,7 @@
       },
       {
         "title": "OptineLocalizeFixをご利用の方へ",
-        "description": "CrafterKina様のOptifineLocalizeFixを利用する場合は、\nこちらのリソースパックのみを導入してください。\n両方導入するとバニラアイテム翻訳修正パッチが適応されません。",
+        "description": "CrafterKina様のOptifineLocalizeFixを利用する場合は、\r\nこちらのリソースパックのみを導入してください。\r\n両方導入するとバニラアイテム翻訳修正パッチが適応されません。",
         "type":
           [
             "1",
@@ -1031,7 +1031,7 @@
       },
       {
         "title": "報告・連絡",
-        "description": "翻訳できないや翻訳がおかしいなどの報告や連絡は\n非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。",
+        "description": "翻訳できないや翻訳がおかしいなどの報告や連絡は\r\n非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。",
         "type":
           [
             "0",
