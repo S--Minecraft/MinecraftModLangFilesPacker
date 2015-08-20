@@ -27,6 +27,6 @@ exports.output = (json, callback) ->
                    readme)
 
   # zip
-  outputName = "../../output/zip/lang_S_#{minecraftVer}_#{packVer}.zip"
+  outputName = "lang_S_#{minecraftVer}_#{packVer}.zip"
   output.zipUp(outputName, json, type, callback)
   return
