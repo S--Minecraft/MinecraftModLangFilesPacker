@@ -4,13 +4,6 @@
 ###
 fs = require "fs-extra"
 util = require "./util.js"
-archiver = require "archiver"
-
-# cautionをテキストに変換
-exports.cautionTransform = (caution) ->
-  text = "《#{caution.title}》\r\n"
-  text += "#{caution.description}\r\n\r\n"
-  return text
 
 exports.output = (json, callback) ->
   packVer = json["pack-version"]
@@ -32,23 +25,7 @@ exports.output = (json, callback) ->
                    readme)
 
   # zip
-  zip = archiver "zip"
-  outputZip = fs.createWriteStream("../../output/zip/lang_S_#{minecraftVer}_#{packVer}.zip")
-  outputZip.on("close", ->
-    console.log "lang_S_#{minecraftVer}_#{packVer}.zip #{zip.pointer()} total bytes"
-    # tempを削除する
-    if fs.existsSync("../../temp/#{minecraftVer} - #{packVer} - 0")
-      fs.removeSync("../../temp/#{minecraftVer} - #{packVer} - 0")
-    callback()
-    return
-  )
-  zip.on("error", (err) ->
-    console.log err
-    return
-  )
-  zip.pipe(outputZip)
-  zip.bulk([
-    {expand: true, cwd: "../../temp/#{minecraftVer} - #{packVer} - 0/", src: ["**"]}
-  ])
-  zip.finalize()
+  outputName = "../../output/zip/lang_S_#{minecraftVer}_#{packVer}.zip"
+  type = 0
+  util.zipUp(outputName, json, type, callback)
   return

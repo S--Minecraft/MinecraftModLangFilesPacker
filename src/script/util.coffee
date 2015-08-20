@@ -3,6 +3,7 @@
   Util
 ###
 fs = require "fs-extra"
+archiver = require "archiver"
 
 # indexOfの代用メソッド(高速化)
 exports.index = (arr, val) ->
@@ -55,3 +56,28 @@ exports.makeReadmeText = (json, title) ->
   readme += readmeCaution + readmeCredits + readmeAfter
   return readme
 
+# zipをする
+exports.zipUp = (outputName, json, type, callback) ->
+  packVer = json["pack-version"]
+  minecraftVer = json["minecraft-version"]
+
+  zip = archiver "zip"
+  outputZip = fs.createWriteStream("../../output/zip/#{outputName}")
+  outputZip.on("close", ->
+    console.log "#{outputName} #{zip.pointer()} total bytes"
+    # tempを削除する
+    if fs.existsSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
+      fs.removeSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
+    callback()
+    return
+  )
+  zip.on("error", (err) ->
+    console.log err
+    return
+  )
+  zip.pipe(outputZip)
+  zip.bulk([
+    {expand: true, cwd: "../../temp/#{minecraftVer} - #{packVer} - #{type}/", src: ["**"]}
+  ])
+  zip.finalize()
+  return
