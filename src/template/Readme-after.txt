@@ -1,5 +1,4 @@
-
-《リンク》
+﻿《リンク》
 Minecraft公式ホームページ
 ---https://minecraft.net/
 

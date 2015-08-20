@@ -238,7 +238,7 @@
       },
       {
         "title": "TwilightForest 2.0.3の日本語翻訳ファイル導入時の注意",
-        "description": "TwilightForestのlangファイルについては、2.0.3とついているほうが2.0.3用、ついていないほうが2.3.2用となります。",
+        "description": "TwilightForestのlangファイルについては、2.0.3とついているほうが2.0.3用、\r\nついていないほうが2.3.2用となります。",
         "type": "0"
       },
       {
