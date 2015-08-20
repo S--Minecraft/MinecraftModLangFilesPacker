@@ -579,10 +579,10 @@
           ],
         "url": "https://bitbucket.org/mistaqur/nei_plugins",
         "path":
-        [
-          "assets/neiplugins/lang",
-          "assets/neiplugins/lang_nei"
-        ]
+          {
+            "lang": "assets/neiplugins/lang",
+            "lang_nei": "assets/neiplugins/lang_nei"
+          }
       },
       {
         "name": "NetherOres",
