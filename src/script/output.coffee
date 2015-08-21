@@ -26,11 +26,10 @@ exports.makeReadmeText = (json, type, title) ->
     readmePath += "《配置場所(config/zip/jar)》\r\n"
     for mod in json.mods
       if mod.advanced?
-        readmePath += "#{mod.name}(#{mod.version}): "
         if mod.advanced.type is "config" and type is 1
-          readmePath += ".minecraftフォルダ/config/#{mod.advanced.path}\r\n"
+          readmePath += "#{mod.name}(#{mod.version}): .minecraftフォルダ/config/#{mod.advanced.path}\r\n"
         else if mod.advanced.type is "zip"
-          readmePath += "modのzipやjar/#{mod.advanced.path}\r\n"
+          readmePath += "#{mod.name}(#{mod.version}): modのzipやjar/#{mod.advanced.path}\r\n"
     readmePath += "\r\n"
   readmeCredits = "《クレジット》\r\n"
   for mod in json.mods
@@ -44,18 +43,12 @@ exports.makeReadmeText = (json, type, title) ->
   return readme
 
 # zipをする
-exports.zipUp = (outputName, json, type, callback) ->
-  packVer = json["pack-version"]
-  minecraftVer = json["minecraft-version"]
-
+exports.zipUp = (outputName, inputPlace, json, type, callback) ->
   zip = archiver "zip"
   outputZip = fs.createWriteStream("../../output/zip/#{outputName}")
   outputZip.on("close", ->
     console.log "#{outputName} #{zip.pointer()} total bytes"
-    # tempを削除する
-    if fs.existsSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
-      fs.removeSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
-    callback()
+    callback(json, type)
     return
   )
   zip.on("error", (err) ->
@@ -64,7 +57,7 @@ exports.zipUp = (outputName, json, type, callback) ->
   )
   zip.pipe(outputZip)
   zip.bulk([
-    {expand: true, cwd: "../../temp/#{minecraftVer} - #{packVer} - #{type}/", src: ["**"]}
+    {expand: true, cwd: inputPlace, src: ["**"]}
   ])
   zip.finalize()
   return

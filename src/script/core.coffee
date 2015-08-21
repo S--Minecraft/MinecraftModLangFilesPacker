@@ -54,7 +54,12 @@ if compileType170 then j++
 if compileType171 then j++
 if compileType172 then j++
 # tempフォルダ削除
-rmvTemp = () ->
+rmvTemp = (json, type) ->
+  packVer = json["pack-version"]
+  minecraftVer = json["minecraft-version"]
+  # tempを削除する
+  if fs.existsSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
+    fs.removeSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
   i++
   if i is j
     fs.removeSync("../../temp")
