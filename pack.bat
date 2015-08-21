@@ -1,4 +1,6 @@
-:: å®Ÿè¡Œ
+:: Às
+
+call clean
 
 echo do
 cd src\compiled
