@@ -3,6 +3,7 @@
   Output
 ###
 fs = require "fs-extra"
+path = require "path"
 archiver = require "archiver"
 util = require "./util.js"
 
@@ -13,7 +14,7 @@ exports.cautionTransform = (caution) ->
   return text
 
 # readme作成
-exports.makeReadmeText = (json, type, title) ->
+exports.makeReadmeText = (json, type, title, escaped) ->
   readmeBBefore = "////////////////////////////////////////////////////////////////\r\n"
   readmeBBefore += title
   readmeBefore = fs.readFileSync("../template/Readme-before.txt", {encoding: "utf8"})
@@ -21,6 +22,17 @@ exports.makeReadmeText = (json, type, title) ->
   for caution in json.cautions
     if util.exist(caution.type, type.toString())
       readmeCaution += @cautionTransform(caution)
+  readmeEscaped = ""
+  if escaped? and escaped.length isnt 0
+    readmeEscaped += "《導入時の注意》\r\n"
+    readmeEscaped += "以下のmodのバージョンのlangファイルは\r\n既定では無効になっています\r\n"
+    readmeEscaped += "下記のpathからバージョンを取り除いていただくと有効になります\r\n"
+    for mod in escaped
+      readmeEscaped += "#{mod.name}(#{mod.version}): #{mod.path} - #{mod.version}"
+      if mod.advanced?
+        readmeEscaped += " .minecraft/config/#{mod.advanced.path} - #{mod.version}"
+      readmeEscaped += "\r\n"
+    readmeEscaped += "\r\n"
   readmePath = ""
   if type is 1 or type is 2
     readmePath += "《配置場所(config/zip/jar)》\r\n"
@@ -35,11 +47,12 @@ exports.makeReadmeText = (json, type, title) ->
   for mod in json.mods
     if mod.contributors?
       readmeCredits += "#{mod.name}のlangファイル\r\n"
-      readmeCredits += "-#{mod.contributors}様\r\n\r\n"
+      readmeCredits += "-#{mod.contributors}様\r\n"
+  readmeCredits += "\r\n"
   readmeAfter = fs.readFileSync("../template/Readme-after.txt", {encoding: "utf8"})
 
-  readme = readmeBBefore + "\r\n" + readmeBefore + "\r\n"
-  readme += readmeCaution + readmePath + readmeCredits + readmeAfter
+  readme = readmeBBefore + "\r\n" + readmeBefore + "\r\n" + readmeCaution
+  readme += readmeEscaped + readmePath + readmeCredits + readmeAfter
   return readme
 
 # zipをする
@@ -47,7 +60,8 @@ exports.zipOne = (outputName, inputPlace, json, callback) ->
   zip = archiver "zip"
   outputZip = fs.createWriteStream("../../#{outputName}")
   outputZip.on("close", ->
-    console.log "#{outputName} #{zip.pointer()} total bytes"
+    name = path.basename(outputName)
+    console.log "#{name} #{zip.pointer()} total bytes"
     callback()
     return
   )
@@ -63,18 +77,15 @@ exports.zipOne = (outputName, inputPlace, json, callback) ->
   return
 
 # 配布用zipをする
-exports.zipUp = (outputName, json, type, callback) ->
+exports.zipUp = (outputName, json, type) ->
   zip = archiver "zip"
   packVer = json["pack-version"]
   minecraftVer = json["minecraft-version"]
 
   outputZip = fs.createWriteStream("../../output/zip/#{outputName}")
   outputZip.on("close", ->
-    console.log "#{outputName} #{zip.pointer()} total bytes"
-    # tempを削除する
-    #if fs.existsSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
-    #  fs.removeSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
-    #callback()
+    name = path.basename(outputName)
+    console.log "#{name} #{zip.pointer()} total bytes"
     return
   )
   zip.on("error", (err) ->
