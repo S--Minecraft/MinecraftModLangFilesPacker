@@ -98,10 +98,7 @@
           {
             "type": "zip",
             "path": "assets/appeng/lang",
-            "file":
-              [
-                "lang.list"
-              ]
+            "file": "lang.list"
           }
       },
       {
@@ -131,10 +128,7 @@
           {
             "type": "zip",
             "path": "assets/weaponmod/lang",
-            "file":
-              [
-                "lang.txt"
-              ]
+            "file": "lang.txt"
           }
       },
       {
