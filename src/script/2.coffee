@@ -30,20 +30,16 @@ exports.output = (json, callback) ->
         if util.isArray(mod.path)
           for key, val of mod.path
             fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/#{key}",
-                        "../../temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}/#{val}")
+                        "../../temp/S_lang_files_in_#{minecraftVer}/#{val}")
         else if util.isString(mod.path)
           fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}",
-                      "../../temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}/#{mod.path}")
+                      "../../temp/S_lang_files_in_#{minecraftVer}/#{mod.path}")
 
   #pack.mcmetaとpack.png
   fs.copySync("../template/pack.mcmeta",
-              "../../temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}/pack.mcmeta")
+              "../../temp/S_lang_files_in_#{minecraftVer}/pack.mcmeta")
   fs.copySync("../template/pack.png",
-              "../../temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}/pack.png")
-
-  # リソースパックのzip
-  output.zipOne("temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_#{minecraftVer}.zip",
-               "temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}", json)
+              "../../temp/S_lang_files_in_#{minecraftVer}/pack.png")
 
   #S_lang_files_in_version.txt
   fs.mkdirsSync("../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/")
@@ -55,6 +51,11 @@ exports.output = (json, callback) ->
   fs.outputFileSync("../../temp/#{minecraftVer} - #{packVer} - 2/Readme - 導入前に読んでください.txt",
                    readme)
 
-  # zip
-  output.zipUp("S_lang_files_Ex_#{minecraftVer}_#{packVer}.zip", json, 2, callback)
+  # リソースパックのzip
+  output.zipOne("temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_#{minecraftVer}.zip",
+               "temp/S_lang_files_in_#{minecraftVer}", json, ->
+    # リソースパックがzipされてから実行する
+    # zip
+    output.zipUp("S_lang_files_Ex_#{minecraftVer}_#{packVer}.zip", json, 2, callback)
+  )
   return
