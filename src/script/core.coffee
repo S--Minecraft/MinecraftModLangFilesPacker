@@ -11,6 +11,7 @@ src0 = require "./0.js"
 src1 = require "./1.js"
 src2 = require "./2.js"
 srcBBcode = require "./bbcode.js"
+srcMarkdown = require "./markdown.js"
 
 ###
   実行
@@ -27,10 +28,12 @@ compileType160 = false #1.6.xの通常型を出力するか
 compileType161 = false #1.6.xのリソースパック型を出力するか
 compileType162 = false #1.6.xの直接導入型を出力するか
 compileType16b = false #1.6.xのBBCodeを出力するか
+compileType16m = false #1.6.xのMarkdownを出力するか
 compileType170 = false #1.7.xの通常型を出力するか
 compileType171 = false #1.7.xのリソースパック型を出力するか
 compileType172 = false #1.7.xの直接導入型を出力するか
 compileType17b = false #1.7.xのBBCodeを出力するか
+compileType17m = false #1.6.xのMarkdownを出力するか
 
 if isCompile16Need
   compileType16 = cfgJSON["1.6.x"]
@@ -38,12 +41,14 @@ if isCompile16Need
   compileType161 = util.existInArray(compileType16, "1")
   compileType162 = util.existInArray(compileType16, "2")
   compileType16b = util.existInArray(compileType16, "b")
+  compileType16m = util.existInArray(compileType16, "m")
 if isCompile17Need
   compileType17 = cfgJSON["1.7.x"]
   compileType170 = util.existInArray(compileType17, "0")
   compileType171 = util.existInArray(compileType17, "1")
   compileType172 = util.existInArray(compileType17, "2")
   compileType17b = util.existInArray(compileType17, "b")
+  compileType17m = util.existInArray(compileType17, "m")
 
 i = 0 #temp使用済み数
 j = 0 #temp使用予定数
@@ -78,6 +83,9 @@ if isCompile16Need
   if compileType16b
     console.log "Output 1.6.x BBCode"
     srcBBcode.output(json16)
+  if compileType16m
+    console.log "Output 1.6.x Markdown"
+    srcMarkdown.output(json16)
 
 if isCompile17Need
   console.log "Output 1.7.x"
@@ -96,6 +104,9 @@ if isCompile17Need
   if compileType17b
     console.log "Output 1.7.x BBCode"
     srcBBcode.output(json17)
+  if compileType17m
+    console.log "Output 1.7.x Markdown"
+    srcMarkdown.output(json17)
 
 console.log "Completed"
 
