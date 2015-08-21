@@ -25,10 +25,11 @@
       },
       {
         "name": "AdditionalBuildcraftObjects",
-        "version": "1.0.6.1.7.4",
+        "version": "1.0.7.561",
         "minecraft-version":
           [
-            "1.6.2"
+            "1.6.2",
+            "1.6.4"
           ],
         "url": "http://www.siedler25.org/uploads/minecraft/AdditionalBuildcraftObjects/",
         "advanced":
@@ -76,7 +77,7 @@
       },
       {
         "name": "AdvancedReactors",
-        "version": "1.0.0pre2",
+        "version": "1.0.5",
         "minecraft-version":
           [
             "1.6.2"
@@ -103,7 +104,7 @@
       },
       {
         "name": "ArsMagica2",
-        "version": "1.1.1c",
+        "version": "1.1.2b",
         "minecraft-version":
           [
             "1.6.2",
@@ -133,7 +134,7 @@
       },
       {
         "name": "BetterStorage",
-        "version": "0.7.3.38",
+        "version": "0.8.0.45",
         "minecraft-version":
           [
             "1.6.2",
@@ -145,17 +146,18 @@
       },
       {
         "name": "BiblioCraft",
-        "version": "1.4.1",
+        "version": "1.5.5",
         "minecraft-version":
           [
-            "1.6.2"
+            "1.6.2",
+            "1.6.4"
           ],
         "url": "http://www.minecraftforum.net/topic/1680480",
         "path": "assets/biliocraft/lang"
       },
       {
         "name": "BigReactors",
-        "version": "0.2.14A",
+        "version": "0.3.3A",
         "minecraft-version":
           [
             "1.6.2",
@@ -178,7 +180,7 @@
       },
       {
         "name": "BloodMagic",
-        "version": "1.0.0",
+        "version": "1.0.1d",
         "minecraft-version":
           [
             "1.6.2",
@@ -237,7 +239,7 @@
       },
       {
         "name": "CoFHCore",
-        "version": "2.0.0.0",
+        "version": "2.0.0.5",
         "minecraft-version":
           [
             "1.6.4"
@@ -281,7 +283,7 @@
       },
       {
         "name": "DimensionalAnchor",
-        "version": "56.0.1",
+        "version": "57.1.96",
         "minecraft-version":
           [
             "1.6.2"
@@ -314,7 +316,7 @@
       },
       {
         "name": "EquivalentExchange3",
-        "version": "0.1.129",
+        "version": "0.1.140",
         "minecraft-version":
           [
             "1.6.2",
@@ -326,7 +328,7 @@
       },
       {
         "name": "ExtraCells",
-        "version": "1.6.7d",
+        "version": "1.6.9b",
         "minecraft-version":
           [
             "1.6.2"
@@ -347,10 +349,11 @@
       },
       {
         "name": "Factorization",
-        "version": "0.8.04β13",
+        "version": "0.8.34",
         "minecraft-version":
           [
-            "1.6.2"
+            "1.6.2",
+            "1.6.4"
           ],
         "url": "http://www.minecraftforum.net/topic/1351802",
         "path": "assets/factorization/lang"
@@ -395,21 +398,6 @@
       },
       {
         "name": "Gregtech",
-        "version": "4.04l",
-        "minecraft-version":
-          [
-            "1.6.2"
-          ],
-        "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=7156&",
-        "advanced":
-          {
-            "type": "config",
-            "path": "GregTech"
-          },
-        "note": "[lf用最終版]"
-      },
-      {
-        "name": "Gregtech",
         "version": "4.08s",
         "minecraft-version":
           [
@@ -424,6 +412,21 @@
         "note": "[ex用1.6.x最終版]"
       },
       {
+        "name": "Gregtech",
+        "version": "4.04l",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
+        "url": "http://forum.industrial-craft.net/index.php?page=Thread&threadID=7156&",
+        "advanced":
+          {
+            "type": "config",
+            "path": "GregTech"
+          },
+        "note": "[lf用最終版]"
+      },
+      {
         "name": "Immibis'sPerpherals",
         "version": "56.0.1・57.0.1",
         "minecraft-version":
@@ -436,20 +439,20 @@
       },
       {
         "name": "ImmibisCore",
-        "version": "56.0.5",
+        "version": "57.1.92",
         "minecraft-version":
           [
-            "1.6.2"
+            "1.6.4"
           ],
         "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_core/lang"
       },
       {
         "name": "ImmibisCore",
-        "version": "57.1.92",
+        "version": "56.0.5",
         "minecraft-version":
           [
-            "1.6.4"
+            "1.6.2"
           ],
         "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_core/lang"
@@ -464,21 +467,6 @@
           ],
         "url": "http://www.minecraftforum.net/topic/1001131",
         "path": "assets/immibis_microblocks/lang"
-      },
-      {
-        "name": "IndustrialCraft2",
-        "version": "1.118.401-lf",
-        "minecraft-version":
-          [
-            "1.6.2"
-          ],
-        "contributors": "Sdaru241",
-        "url": "http://ic2api.player.to:8080/job/IC2_lf/",
-        "advanced":
-          {
-            "type": "zip",
-            "path": "ic2/lang"
-          }
       },
       {
         "name": "IndustrialCraft2",
@@ -497,6 +485,21 @@
         "note": "[1.6.x最終版]"
       },
       {
+        "name": "IndustrialCraft2",
+        "version": "1.118.401-lf",
+        "minecraft-version":
+          [
+            "1.6.2"
+          ],
+        "contributors": "Sdaru241",
+        "url": "http://ic2api.player.to:8080/job/IC2_lf/",
+        "advanced":
+          {
+            "type": "zip",
+            "path": "ic2/lang"
+          }
+      },
+      {
         "name": "IronChests",
         "version": "5.3.14・5.4.1",
         "minecraft-version":
@@ -507,6 +510,18 @@
         "contributors": "サーモン2号",
         "url": "http://www.minecraftforum.net/topic/981855",
         "path": "assets/ironchest/lang"
+      },
+      {
+        "name": "JABBA",
+        "version": "1.1.3",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
+        "contributors": "DOR",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1292942",
+        "path": "assets/jabba/lang"
       },
       {
         "name": "LaserMod",
@@ -522,7 +537,7 @@
       },
       {
         "name": "LogisticsPipes",
-        "version": "0.7.4.dev98",
+        "version": "0.7.4.dev249",
         "minecraft-version":
           [
             "1.6.4"
@@ -537,7 +552,7 @@
       },
       {
         "name": "MineFactoryReloaded2",
-        "version": "2.7.6",
+        "version": "2.7.9",
         "minecraft-version":
           [
             "1.6.2",
@@ -553,7 +568,7 @@
       },
       {
         "name": "MystCraft",
-        "version": "0.10.7・0.10.11",
+        "version": "0.10.7.00・0.10.13.01",
         "minecraft-version":
           [
             "1.6.2",
@@ -596,10 +611,11 @@
       },
       {
         "name": "NHAVE'sOmniWrench",
-        "version": "1.0.5",
+        "version": "1.2.1",
         "minecraft-version":
           [
-            "1.6.2"
+            "1.6.2",
+            "1.6.4"
           ],
         "contributors": "サーモン2号",
         "url": "http://minecraft.curseforge.com/mc-mods/65886",
@@ -628,7 +644,7 @@
       },
       {
         "name": "OpenBlocks",
-        "version": "1.2.4",
+        "version": "1.2.8",
         "minecraft-version":
           [
             "1.6.2",
@@ -639,16 +655,35 @@
         "path": "assets/openblocks/lang"
       },
       {
-        "name": "PowerConverters",
-        "version": "1.6.4",
+        "name": "PowerConverters[portablejim]",
+        "version": "2.4.0.18",
         "minecraft-version":
           [
-            "1.6.2",
+            "1.6.4"
+          ],
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1293983",
+        "path": "assets/powerconverters/lang"
+      },
+      {
+        "name": "PowerConverters[samrg472]",
+        "version": "2.4.0",
+        "minecraft-version":
+          [
             "1.6.4"
           ],
         "contributors": "小咲みずあき",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1287961",
         "path": "assets/powerconverters/lang"
+      },
+      {
+        "name": "ProjectRed",
+        "version": "4.3.5.30",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
+        "url": "http://projectredwiki.com/wiki/Main_Page",
+        "path": "assets/projectred/lang"
       },
       {
         "name": "ProjectRed",
@@ -661,14 +696,25 @@
         "path": "assets/projectred/lang"
       },
       {
-        "name": "ProjectRed",
-        "version": "4.2.2.19",
+        "name": "ReactorCraft",
+        "version": "1.6v16",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
+        "url": "https://sites.google.com/site/reikasminecraft/reactorcraft",
+        "path": "assets/reactorcraft/lang"
+      },
+      {
+        "name": "RedLogic",
+        "version": "57.3.1",
         "minecraft-version":
           [
             "1.6.4"
           ],
-        "url": "http://projectredwiki.com/wiki/Main_Page",
-        "path": "assets/projectred/lang"
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1444476",
+        "path": "assets/redlogic/lang"
       },
       {
         "name": "RedLogic",
@@ -676,16 +722,6 @@
         "minecraft-version":
           [
             "1.6.2"
-          ],
-        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1444476",
-        "path": "assets/redlogic/lang"
-      },
-      {
-        "name": "RedLogic",
-        "version": "57.2.8",
-        "minecraft-version":
-          [
-            "1.6.4"
           ],
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1444476",
         "path": "assets/redlogic/lang"
@@ -750,7 +786,7 @@
       },
       {
         "name": "ThermalExpansion",
-        "version": "3.0.0.2",
+        "version": "3.0.0.7",
         "minecraft-version":
           [
             "1.6.4"
@@ -804,6 +840,18 @@
           ],
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1281065",
         "path": "assets/tubestuff/lang"
+      },
+      {
+        "name": "TwilightForest",
+        "version": "1.20.4",
+        "minecraft-version":
+          [
+            "1.6.2",
+            "1.6.4"
+          ],
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1276258",
+        "path": "assets/twilightforest/lang",
+        "note": "([url=\"http://forum.minecraftuser.jp/viewtopic.php?f=13&t=12511\"]Sdaruさんのclassファイル[/url]が必要です)"
       },
       {
         "name": "UndergroundBiomes・UnderGroundBiomesConstructs",
@@ -901,116 +949,6 @@
         "title": "1.6.x用バニラアイテム翻訳修正パッチの導入方法",
         "description": "非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。\r\nCrafterKina様のOptifineLocalizeFixを利用する場合は、\r\nこちらのバニラアイテム修正パッチのみを導入してください。",
         "type": "0"
-      },
-      {
-        "title": "Gregtech日本語翻訳ファイル導入時の注意",
-        "description": "Gregtechはlangファイルを.minecraft/config/gregtechに\r\n導入する必要があります。(上書き)\r\nまた、「Gregtech.lang」は4.08s用です。\r\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\r\nリネームした上で上記の通りに導入してください。\r\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
-        "type": "0"
-      },
-      {
-        "title": "Gregtech日本語翻訳ファイル導入時の注意",
-        "description": "Gregtechはこのリソースパックを導入しただけでは有効になりません。\r\n「To_Config」フォルダ内にある「Gregtech.lang」を.minecraft/config/gregtechに\r\n導入してください。(上書き)\r\nまた、「Gregtech.lang」は4.08s用です。\r\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\r\nリネームした上で上記の通りに導入してください。\r\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
-        "type": "1"
-      },
-      {
-        "title": "Gregtech日本語翻訳ファイル導入時の注意",
-        "description": "ダウンロードした地点では、Gregtechの4.08s用が有効になっています。\r\n4.04l用をご利用の方は、「Gregtech_4.04l.lang」を「Gregtech.lang」に\r\nリネームした上で上記の通りに導入してください。\r\n元の4.08s用の「Gregtech.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
-        "type": "2"
-      },
-      {
-        "title": "RemoteIO日本語翻訳ファイル導入時の注意",
-        "description": "RemoteIOはlangファイルを.minecraft/config/remoteio/langに\r\n導入する必要があります。",
-        "type": "0"
-      },
-      {
-        "title": "RemoteIO日本語翻訳ファイル導入時の注意",
-        "description": "RemoteIOはこのリソースパックを導入しただけでは有効になりません。\r\n「To_Config」フォルダ内にある「ja_JP.properties」を\r\n.minecraft/config/remoteio/langに導入してください。",
-        "type": "1"
-      },
-      {
-        "title": "IndustrialCraft2の日本語翻訳ファイル導入時の注意",
-        "description": "IndustrialCraftのlangファイルについては、1.118-401-lfとついているほうがlf用、\r\nついていないほうがex版となります。",
-        "type": "0"
-      },
-      {
-        "title": "IndustrialCraft2の日本語翻訳ファイル導入時の注意",
-        "description": "IndustrialCraft2はこのリソースパックを導入しただけでは\r\n有効になりません。「To_zip.jar」フォルダ内にある「ja_JP.properties」を\r\n通常導入してください。また、「ja_JP.properties」はex用です。\r\nlf用をご利用の方は、「ja_JP_1.118-401-lf.properties」を\r\n「ja_JP.properties」にリネームした上で上記の通りに導入してください。\r\n元のex用の「ja_JP.properties」については利用しないのであれば、\r\n上書きしても大丈夫です。",
-        "type": "1"
-      },
-      {
-        "title": "IndustrialCraft2の日本語翻訳ファイル導入時の注意",
-        "description": "IndustrialCraft2は導入しただけでは\r\n有効になりません。「To_zip.jar」フォルダ内にある「ja_JP.properties」を\r\n通常導入してください。また、「ja_JP.properties」はex用です。\r\nlf用をご利用の方は、「ja_JP_1.118-401-lf.properties」を\r\n「ja_JP.properties」にリネームした上で上記の通りに導入してください。\r\n元のex用の「ja_JP.properties」については利用しないのであれば、\r\n上書きしても大丈夫です。",
-        "type": "2"
-      },
-      {
-        "title": "MineFactoryReloaded2の日本語翻訳ファイル導入時の注意",
-        "description": "MineFactoryReloadedはlangファイルを\r\n.minecraft/config/powercrystals/minefactoryreloadedに\r\n導入する必要があります。",
-        "type": "0"
-      },
-      {
-        "title": "MineFactoryReloaded2の日本語翻訳ファイル導入時の注意",
-        "description": "MineFactoryReloadedはこのリソースパックを導入しただけでは\r\n有効になりません。「To_Config」フォルダ内にある「ja_JP.lang」を\r\n.minecraft/config/powercrystals/minefactoryreloadedに\r\n導入してください。",
-        "type": "1"
-      },
-      {
-        "title": "NetherOresの日本語翻訳ファイル導入時の注意",
-        "description": "NetherOresはlangファイルを\r\n.minecraft/config/powercrystals/netheroresに\r\n導入する必要があります。",
-        "type": "0"
-      },
-      {
-        "title": "NetherOresの日本語翻訳ファイル導入時の注意",
-        "description": "NetherOresはこのリソースパックを導入しただけでは\r\n有効になりません。「To_Config」フォルダ内にある「ja_JP.lang」を\r\n.minecraft/config/powercrystals/netheroresに\r\n導入してください。",
-        "type": "1"
-      },
-      {
-        "title": "ImmibisCore 56.0.5の日本語翻訳ファイル導入時の注意",
-        "description": "ImmibisCoreのlangファイルについては、56.0.5とついているほうが56.0.5用、\r\nついていないほうが57.1.92用となります。",
-        "type": "0"
-      },
-      {
-        "title": "ImmibisCore 56.0.5の日本語翻訳ファイル導入時の注意",
-        "description": "ダウンロードした地点では、ImmibisCoreの57.1.92用が有効になっています。\r\n56.0.5用を有効にするには、「ja_JP_56.0.5.lang」を「ja_JP.lang」に\r\nリネームしてください。\r\n元の57.1.92用の「ja_JP.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
-        "type":
-          [
-            "1",
-            "2"
-          ]
-      },
-      {
-        "title": "RedLogic 56.1.1の日本語翻訳ファイル導入時の注意",
-        "description": "ダウンロードした地点では、RedLogicの57.2.8版が有効になっています。\r\n56.1.1版を有効にするには、「ja_JP_56.1.1.lang」を「ja_JP.lang」に\r\nリネームしてください。\r\n元の57.2.8用の「ja_JP.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
-        "type":
-          [
-            "1",
-            "2"
-          ]
-      },
-      {
-        "title": "ProjectRed 4.0.1.4の日本語翻訳ファイル導入時の注意",
-        "description": "ダウンロードした地点では、ProjectRedの4.2.2.19版が有効になっています。\r\n4.0.1.4版を有効にするには、「ja_JP_4.0.1.4.lang」を「ja_JP.lang」に\r\nリネームしてください。\r\n元の4.2.2.19用の「ja_JP.lang」については利用しないのであれば、\r\n上書きしても大丈夫です。",
-        "type":
-          [
-            "1",
-            "2"
-          ]
-      },
-      {
-        "title": "AdditonalBuildcraftObjects・AdditionalPipes・AdvancedMachines 1.118(NOT ex)\r\n　ForestryForMinecraft・LogisticsPipes・Buildcraft日本語翻訳ファイル導入時の注意",
-        "description": "これらのlangファイルは導入しただけでは有効になりません。\r\n「To_zip.jar」フォルダ内のそれぞれのフォルダにある\r\n「ja_JP.lang」/「ja_JP.properties」を通常導入してください。",
-        "type":
-          [
-            "1",
-            "2"
-          ]
-      },
-      {
-        "title": "AppliedEnergistics・Balkon'sWeaponMod日本語翻訳ファイル導入時の注意",
-        "description": "これらのlangファイルは導入しただけでは有効になりません。\r\n「To_zip.jar」フォルダ内のそれぞれのフォルダにある\r\n「lang.list」/「lang.txt」を通常導入してください。",
-        "type":
-          [
-            "1",
-            "2"
-          ]
       },
       {
         "title": "BigReactors・FrogCraftの日本語翻訳ファイル導入時の注意",
