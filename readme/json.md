@@ -21,3 +21,4 @@
 
 ※ pathとpathの配列とadvanced.pathの重複時の適応順序は
 　 advanced.path→pathの配列→path
+※ 同じところに適応するものがある場合先に書かれたものを適応して、後に書かれたものはバージョンでエスケープする
