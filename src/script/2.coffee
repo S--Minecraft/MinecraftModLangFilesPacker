@@ -42,12 +42,8 @@ exports.output = (json, callback) ->
               "../../temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}/pack.png")
 
   # リソースパックのzip
-  output.zipUp("../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_#{minecraftVer}.zip",
-               "../../temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}", json, 2, ->
-                 if fs.existsSync("../../temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}")
-                   fs.removeSync("../../temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}")
-                 return
-               )
+  output.zipOne("temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_#{minecraftVer}.zip",
+               "temp/#{minecraftVer} - #{packVer} - 2/S_lang_files_in_#{minecraftVer}", json)
 
   #S_lang_files_in_version.txt
   fs.mkdirsSync("../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/")
@@ -60,8 +56,5 @@ exports.output = (json, callback) ->
                    readme)
 
   # zip
-  output.zipUp("S_lang_files_Ex_#{minecraftVer}_#{packVer}.zip",
-               "../../temp/#{minecraftVer} - #{packVer} - 2/", json, 2, ->
-                 return
-               )
+  output.zipUp("S_lang_files_Ex_#{minecraftVer}_#{packVer}.zip", json, 2, callback)
   return

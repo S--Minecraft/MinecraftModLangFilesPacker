@@ -49,6 +49,5 @@ exports.output = (json, callback) ->
               "../../temp/#{minecraftVer} - #{packVer} - 1/pack.png")
 
   # zip
-  output.zipUp("S_lang_files_#{minecraftVer}_#{packVer}.zip",
-               "../../temp/#{minecraftVer} - #{packVer} - 1/", json, 1, callback)
+  output.zipUp("S_lang_files_#{minecraftVer}_#{packVer}.zip", json, 1, callback)
   return

@@ -43,12 +43,13 @@ exports.makeReadmeText = (json, type, title) ->
   return readme
 
 # zipをする
-exports.zipUp = (outputName, inputPlace, json, type, callback) ->
+exports.zipOne = (outputName, inputPlace, json) ->
   zip = archiver "zip"
-  outputZip = fs.createWriteStream("../../output/zip/#{outputName}")
+  outputZip = fs.createWriteStream("../../#{outputName}")
   outputZip.on("close", ->
     console.log "#{outputName} #{zip.pointer()} total bytes"
-    callback(json, type)
+    if fs.existsSync("../../#{inputPlace}")
+      fs.removeSync("../../#{inputPlace}")
     return
   )
   zip.on("error", (err) ->
@@ -57,7 +58,37 @@ exports.zipUp = (outputName, inputPlace, json, type, callback) ->
   )
   zip.pipe(outputZip)
   zip.bulk([
-    {expand: true, cwd: inputPlace, src: ["**"]}
+    {expand: true, cwd: "../../#{inputPlace}", src: ["**"]}
+  ])
+  zip.finalize()
+  return
+
+# 配布用zipをする
+exports.zipUp = (outputName, json, type, callback) ->
+  zip = archiver "zip"
+  packVer = json["pack-version"]
+  minecraftVer = json["minecraft-version"]
+
+  outputZip = fs.createWriteStream("../../output/zip/#{outputName}")
+  outputZip.on("close", ->
+    console.log "#{outputName} #{zip.pointer()} total bytes"
+    # tempを削除する
+    if fs.existsSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
+      fs.removeSync("../../temp/#{minecraftVer} - #{packVer} - #{type}")
+    callback()
+    return
+  )
+  zip.on("error", (err) ->
+    console.log err
+    return
+  )
+  zip.pipe(outputZip)
+  zip.bulk([
+    {
+      expand: true,
+      cwd: "../../temp/#{minecraftVer} - #{packVer} - #{type}",
+      src: ["**"]
+    }
   ])
   zip.finalize()
   return
