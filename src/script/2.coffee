@@ -65,19 +65,19 @@ exports.output = (json, callback) ->
 
   #S_lang_files_in_version.txt
   fs.mkdirsSync("../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/")
-  fs.writeFileSync("../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_version.txt", "#{minecraftVer} - #{packVer}");
+  fs.writeFileSync("../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_version.txt",
+                   "#{minecraftVer} - #{packVer}")
 
   # readme作成
   title = "/lang_S_#{minecraftVer}(直接導入型)//////////////////////////////by S/////"
   readme = output.makeReadmeText(json, type, title, escaped)
-  fs.outputFileSync("../../temp/#{minecraftVer} - #{packVer} - 2/Readme - 導入前に読んでください.txt",
-                   readme)
+  fs.outputFileSync("../../temp/#{minecraftVer} - #{packVer} - 2/Readme - 導入前に読んでください.txt", readme)
 
   # リソースパックのzip
-  output.zipOne("temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_#{minecraftVer}.zip",
-               "temp/S_lang_files_in_#{minecraftVer}", json, ->
+  output.zipOne("temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_#{minecraftVer}.zip","temp/S_lang_files_in_#{minecraftVer}", json, ->
     # リソースパックがzipされてから実行する
     # zip
     output.zipUp("S_lang_files_Ex_#{minecraftVer}_#{packVer}.zip", json, type, callback)
+    return
   )
   return
