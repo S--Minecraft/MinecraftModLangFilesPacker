@@ -33,15 +33,28 @@ exports.makeReadmeText = (json, type, title, escaped) ->
         readmeEscaped += " .minecraft/config/#{mod.advanced.path} - #{mod.version}"
       readmeEscaped += "\r\n"
     readmeEscaped += "\r\n"
-  readmePath = ""
+  readmePath = "《配置場所(config/zip/jar)》\r\n"
   if type is 1 or type is 2
-    readmePath += "《配置場所(config/zip/jar)》\r\n"
     for mod in json.mods
       if mod.advanced?
         if mod.advanced.type is "config" and type is 1
           readmePath += "#{mod.name}(#{mod.version}): .minecraftフォルダ/config/#{mod.advanced.path}\r\n"
         else if mod.advanced.type is "zip"
           readmePath += "#{mod.name}(#{mod.version}): modのzipやjar/#{mod.advanced.path}\r\n"
+  else if type is 0
+    for mod in json.mods
+      readmePath += "#{mod.name}(#{mod.version}): "
+      if mod.path?
+        readmePath += "#{mod.path}"
+      if mod.advanced?
+        if mod.advanced.type is "config"
+          readmePath += " .minecraftフォルダ/config/#{mod.advanced.path}"
+        else if mod.advanced.type is "zip"
+          readmePath += " modのzipやjar/#{mod.advanced.path}"
+      readmePath += "\r\n"
+  if readmePath is "《配置場所(config/zip/jar)》\r\n"
+    readmePath = ""
+  else
     readmePath += "\r\n"
   readmeCredits = "《クレジット》\r\n"
   for mod in json.mods
