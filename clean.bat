@@ -1,3 +1,4 @@
+@echo off
 :: temp‚ğíœ
 
 echo src clean
