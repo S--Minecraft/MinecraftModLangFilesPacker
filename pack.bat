@@ -1,6 +1,5 @@
+@echo off
 :: é¿çs
-
-call clean
 
 echo do
 cd src\compiled

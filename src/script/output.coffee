@@ -90,7 +90,7 @@ exports.zipOne = (outputName, inputPlace, json, callback) ->
   return
 
 # 配布用zipをする
-exports.zipUp = (outputName, json, type) ->
+exports.zipUp = (outputName, json, type, callback) ->
   zip = archiver "zip"
   packVer = json["pack-version"]
   minecraftVer = json["minecraft-version"]
@@ -99,6 +99,7 @@ exports.zipUp = (outputName, json, type) ->
   outputZip.on("close", ->
     name = path.basename(outputName)
     console.log "#{name} #{zip.pointer()} total bytes"
+    callback()
     return
   )
   zip.on("error", (err) ->

@@ -63,6 +63,7 @@ rmvTemp = () ->
   i++
   if i is j
     fs.removeSync("../../temp")
+    console.log("Removed temp")
   return
 
 # 出力
