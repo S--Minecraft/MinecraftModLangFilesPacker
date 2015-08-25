@@ -5,6 +5,9 @@
 
 ## Build
 ```
+git clone https://github.com/S--Minecraft/MinecraftModLangFilesPacker.git
+git clone https://github.com/S--Minecraft/MinecraftModLangFiles.git
+cd MinecraftModLangFilesPacker
 npm install
 pack
 ```
