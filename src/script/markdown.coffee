@@ -1,28 +1,28 @@
 ###
-  bbcode.coffee
+  mkdn.coffee
   BBcodeを生成します
 ###
 fs = require "fs-extra"
 
 exports.modJsonToBBcode = (modJson) ->
-  bbcode = " - "
+  mkdn = " - "
   if modJson.url?
-    bbcode += "[#{modJson.name}](#{modJson.url})・・・"
+    mkdn += "[#{modJson.name}](#{modJson.url})・・・"
   else
-    bbcode += "#{modJson.name}・・・"
-  bbcode += "#{modJson.version}(" + modJson["minecraft-version"].join("/") + ")"
+    mkdn += "#{modJson.name}・・・"
+  mkdn += "#{modJson.version}(" + modJson["minecraft-version"].join("/") + ")"
   if modJson.contributors?
-    bbcode += " Thanks, #{modJson.contributors}さん"
+    mkdn += " Thanks, #{modJson.contributors}さん"
   if modJson.note?
-    bbcode += " #{modJson.note}"
-  bbcode += "\r\n"
-  return bbcode
+    mkdn += " #{modJson.note}"
+  mkdn += "\r\n"
+  return mkdn
 
 exports.output = (json) ->
-  bbcode = "# " + json["minecraft-version"] + "\r\n"
+  mkdn = "# " + json["minecraft-version"] + "\r\n"
   for mod in json.mods
-    bbcode += @modJsonToBBcode(mod)
-  fs.writeFile("../../output/markdown/" + json["minecraft-version"] + " - " + json["pack-version"] + ".txt", bbcode, (err) ->
+    mkdn += @modJsonToBBcode(mod)
+  fs.writeFile("../../output/markdown/" + json["minecraft-version"] + " - " + json["pack-version"] + ".txt", mkdn, (err) ->
     if err?
       console.log err
   )
