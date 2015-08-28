@@ -1,5 +1,5 @@
 {
-  "pack-version": "4.0.0",
+  "pack-version": "4.1.0",
   "minecraft-version": "1.6.x",
   "mods":
     [
@@ -62,7 +62,7 @@
             "1.6.4"
           ],
         "contributors": "小咲みずあき",
-        "url": "http://atomicstryker.net/advancedmachines.php",
+        "url": "http://atomicstryker.net/",
         "path": "assets/advancedmachines/lang"
       },
       {
@@ -72,7 +72,7 @@
           [
             "1.6.2"
           ],
-        "url": "http://atomicstryker.net/advancedmachines.php",
+        "url": "http://atomicstryker.net/",
         "path": "assets/advancedmachines/lang"
       },
       {
@@ -112,7 +112,21 @@
           ],
         "contributors": "ryuoryu",
         "url": "http://www.minecraftforum.net/topic/2028696",
-        "path": "assets/arsmagica/lang"
+        "path":
+          {
+            "arsmagica": "assets/arsmagica/lang",
+            "forge": "assets/forge/lang"
+          }
+      },
+      {
+        "name": "AtomicScience",
+        "version": "1.0.1.189",
+        "minecraft-version":
+          [
+            "1.6.4"
+          ],
+        "contributors": "Sdaru241",
+        "path": "assets/atomicscience/yuyan"
       },
       {
         "name": "Balkon'sWeaponMod",
@@ -476,7 +490,7 @@
             "1.6.4"
           ],
         "contributors": "小咲みずあき",
-        "url": "http://ic2api.player.to:8080/job/IC2_lf/",
+        "url": "http://ic2api.player.to:8080/job/IC2_experimental/",
         "advanced":
           {
             "type": "zip",
@@ -551,6 +565,18 @@
           }
       },
       {
+        "name": "Minechem",
+        "version": "5.0.5-FINAL",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
+        "contributors": "TIER",
+        "url": "https://jakimfett.github.io/Minechem/",
+        "path": "assets/minechem/lang",
+        "note": "(一部翻訳されていません)"
+      },
+      {
         "name": "MineFactoryReloaded2",
         "version": "2.7.9",
         "minecraft-version":
@@ -563,7 +589,7 @@
         "advanced":
           {
             "type": "config",
-            "path": "powercrystals/MineFactoryReloaded/lang"
+            "path": "powercrystals/MineFactoryReloaded"
           }
       },
       {
@@ -606,7 +632,7 @@
         "advanced":
           {
             "type": "config",
-            "path": "powercrystals/NetherOres/lang"
+            "path": "powercrystals/NetherOres"
           }
       },
       {
@@ -949,6 +975,16 @@
         "title": "1.6.x用バニラアイテム翻訳修正パッチの導入方法",
         "description": "非公式日本ユーザーフォーラムのlangファイルのトピックをご覧ください。\r\nCrafterKina様のOptifineLocalizeFixを利用する場合は、\r\nこちらのバニラアイテム修正パッチのみを導入してください。",
         "type": "0"
+      },
+      {
+        "title": "AtomicScienceの日本語翻訳ファイル導入時の注意",
+        "description": "AtomicScienceのlangファイルを適応するには、バイナリエディタでjar内のatomicscience/AtomicScience.classを下記のように書き換える必要があります。\r\n-------------------\r\n  0000583Eを6A\r\n  0000583Fを61\r\n  00005840を5F\r\n  00005841を4A\r\n  00005842を50\r\n-------------------",
+        "type":
+          [
+            "0",
+            "1",
+            "2"
+          ]
       },
       {
         "title": "BigReactors・FrogCraftの日本語翻訳ファイル導入時の注意",
