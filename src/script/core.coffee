@@ -24,6 +24,7 @@ cfgJSON = JSON.parse(text)
 # 設定ファイルパース
 isCompile16Need = cfgJSON["1.6.x"]?
 isCompile17Need = cfgJSON["1.7.x"]?
+isCompile18Need = cfgJSON["1.8.x"]?
 compileType160 = false #1.6.xの通常型を出力するか
 compileType161 = false #1.6.xのリソースパック型を出力するか
 compileType162 = false #1.6.xの直接導入型を出力するか
@@ -34,6 +35,11 @@ compileType171 = false #1.7.xのリソースパック型を出力するか
 compileType172 = false #1.7.xの直接導入型を出力するか
 compileType17b = false #1.7.xのBBCodeを出力するか
 compileType17m = false #1.6.xのMarkdownを出力するか
+compileType180 = false #1.7.xの通常型を出力するか
+compileType181 = false #1.7.xのリソースパック型を出力するか
+compileType182 = false #1.7.xの直接導入型を出力するか
+compileType18b = false #1.7.xのBBCodeを出力するか
+compileType18m = false #1.6.xのMarkdownを出力するか
 
 if isCompile16Need
   compileType16 = cfgJSON["1.6.x"]
@@ -49,6 +55,13 @@ if isCompile17Need
   compileType172 = util.existInArray(compileType17, "2")
   compileType17b = util.existInArray(compileType17, "b")
   compileType17m = util.existInArray(compileType17, "m")
+if isCompile18Need
+  compileType18 = cfgJSON["1.8.x"]
+  compileType180 = util.existInArray(compileType18, "0")
+  compileType181 = util.existInArray(compileType18, "1")
+  compileType182 = util.existInArray(compileType18, "2")
+  compileType18b = util.existInArray(compileType18, "b")
+  compileType18m = util.existInArray(compileType18, "m")
 
 i = 0 #temp使用済み数
 j = 0 #temp使用予定数
@@ -58,6 +71,9 @@ if compileType162 then j++
 if compileType170 then j++
 if compileType171 then j++
 if compileType172 then j++
+if compileType180 then j++
+if compileType181 then j++
+if compileType182 then j++
 # tempフォルダ削除
 rmvTemp = () ->
   i++
@@ -108,6 +124,27 @@ if isCompile17Need
   if compileType17m
     console.log "Output 1.7.x Markdown"
     srcMarkdown.output(json17)
+
+if isCompile18Need
+  console.log "Output 1.8.x"
+  jsonText18 = fs.readFileSync("../template/modList-1.8.x.json", "utf8")
+  console.log "Read modList-1.8.x.json"
+  json18 = JSON.parse(jsonText18)
+  if compileType180
+    console.log "Output 1.8.x 通常型"
+    src0.output(json18, rmvTemp)
+  if compileType181
+    console.log "Output 1.8.x リソースパック型"
+    src1.output(json18, rmvTemp)
+  if compileType182
+    console.log "Output 1.8.x 直接導入型"
+    src2.output(json18, rmvTemp)
+  if compileType18b
+    console.log "Output 1.8.x BBCode"
+    srcBBcode.output(json18)
+  if compileType18m
+    console.log "Output 1.8.x Markdown"
+    srcMarkdown.output(json18)
 
 console.log "Completed"
 
