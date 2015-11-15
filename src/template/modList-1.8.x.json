@@ -1,5 +1,5 @@
 {
-  "pack-version": "1.0.0",
+  "pack-version": "1.0.1",
   "minecraft-version": "1.8.x",
   "mods":
     [
@@ -14,7 +14,7 @@
         "path": "assets/minecraft/lang"
       },
       {
-        "name": "BskprsCore",
+        "name": "bspkrsCore",
         "version": "7.01",
         "minecraft-version":
           [
