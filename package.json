@@ -26,9 +26,7 @@
   "homepage": "https://github.com/S--Minecraft/MinecraftModLangFilesPacker",
   "dependencies": {
     "fs-extra": "*",
-    "archiver": "*"
-  },
-  "devDependencies": {
+    "archiver": "*",
     "coffee-script": "*"
   }
 }
