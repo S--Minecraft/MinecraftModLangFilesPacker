@@ -22,58 +22,23 @@ console.log "Read output.cfg"
 cfgJSON = JSON.parse(text)
 
 # 設定ファイルパース
-isCompile16Need = cfgJSON["1.6.x"]?
-isCompile17Need = cfgJSON["1.7.x"]?
-isCompile18Need = cfgJSON["1.8.x"]?
-compileType160 = false #1.6.xの通常型を出力するか
-compileType161 = false #1.6.xのリソースパック型を出力するか
-compileType162 = false #1.6.xの直接導入型を出力するか
-compileType16b = false #1.6.xのBBCodeを出力するか
-compileType16m = false #1.6.xのMarkdownを出力するか
-compileType170 = false #1.7.xの通常型を出力するか
-compileType171 = false #1.7.xのリソースパック型を出力するか
-compileType172 = false #1.7.xの直接導入型を出力するか
-compileType17b = false #1.7.xのBBCodeを出力するか
-compileType17m = false #1.6.xのMarkdownを出力するか
-compileType180 = false #1.7.xの通常型を出力するか
-compileType181 = false #1.7.xのリソースパック型を出力するか
-compileType182 = false #1.7.xの直接導入型を出力するか
-compileType18b = false #1.7.xのBBCodeを出力するか
-compileType18m = false #1.6.xのMarkdownを出力するか
-
-if isCompile16Need
-  compileType16 = cfgJSON["1.6.x"]
-  compileType160 = util.existInArray(compileType16, "0")
-  compileType161 = util.existInArray(compileType16, "1")
-  compileType162 = util.existInArray(compileType16, "2")
-  compileType16b = util.existInArray(compileType16, "b")
-  compileType16m = util.existInArray(compileType16, "m")
-if isCompile17Need
-  compileType17 = cfgJSON["1.7.x"]
-  compileType170 = util.existInArray(compileType17, "0")
-  compileType171 = util.existInArray(compileType17, "1")
-  compileType172 = util.existInArray(compileType17, "2")
-  compileType17b = util.existInArray(compileType17, "b")
-  compileType17m = util.existInArray(compileType17, "m")
-if isCompile18Need
-  compileType18 = cfgJSON["1.8.x"]
-  compileType180 = util.existInArray(compileType18, "0")
-  compileType181 = util.existInArray(compileType18, "1")
-  compileType182 = util.existInArray(compileType18, "2")
-  compileType18b = util.existInArray(compileType18, "b")
-  compileType18m = util.existInArray(compileType18, "m")
-
 i = 0 #temp使用済み数
 j = 0 #temp使用予定数
-if compileType160 then j++
-if compileType161 then j++
-if compileType162 then j++
-if compileType170 then j++
-if compileType171 then j++
-if compileType172 then j++
-if compileType180 then j++
-if compileType181 then j++
-if compileType182 then j++
+compileType = {}
+
+for key, v of cfgJSON
+  compileType[key] = {}
+  compileType[key]["all"] = v
+  compileType[key][0] = util.existInArray(v, "0") ? false #通常型を出力するか
+  compileType[key][1] = util.existInArray(v, "1") ? false #リソースパック型を出力するか
+  compileType[key][2] = util.existInArray(v, "2") ? false #直接導入型を出力するか
+  compileType[key]["b"] = util.existInArray(v, "b") ? false #BBCodeを出力するか
+  compileType[key]["m"] = util.existInArray(v, "m") ? false #Markdownを出力するか
+
+for key, v of compileType
+  for key2, v2 of v
+    if v2 then j++
+
 # tempフォルダ削除
 rmvTemp = () ->
   i++
@@ -83,68 +48,27 @@ rmvTemp = () ->
   return
 
 # 出力
-if isCompile16Need
-  console.log "Output 1.6.x"
-  jsonText16 = fs.readFileSync("../template/modList-1.6.x.json", "utf8")
-  console.log "Read modList-1.6.x.json"
-  json16 = JSON.parse(jsonText16)
-  if compileType160
-    console.log "Output 1.6.x 通常型"
-    src0.output(json16, rmvTemp)
-  if compileType161
-    console.log "Output 1.6.x リソースパック型"
-    src1.output(json16, rmvTemp)
-  if compileType162
-    console.log "Output 1.6.x 直接導入型"
-    src2.output(json16, rmvTemp)
-  if compileType16b
-    console.log "Output 1.6.x BBCode"
-    srcBBcode.output(json16)
-  if compileType16m
-    console.log "Output 1.6.x Markdown"
-    srcMarkdown.output(json16)
-
-if isCompile17Need
-  console.log "Output 1.7.x"
-  jsonText17 = fs.readFileSync("../template/modList-1.7.x.json", "utf8")
-  console.log "Read modList-1.7.x.json"
-  json17 = JSON.parse(jsonText17)
-  if compileType170
-    console.log "Output 1.7.x 通常型"
-    src0.output(json17, rmvTemp)
-  if compileType171
-    console.log "Output 1.7.x リソースパック型"
-    src1.output(json17, rmvTemp)
-  if compileType172
-    console.log "Output 1.7.x 直接導入型"
-    src2.output(json17, rmvTemp)
-  if compileType17b
-    console.log "Output 1.7.x BBCode"
-    srcBBcode.output(json17)
-  if compileType17m
-    console.log "Output 1.7.x Markdown"
-    srcMarkdown.output(json17)
-
-if isCompile18Need
-  console.log "Output 1.8.x"
-  jsonText18 = fs.readFileSync("../template/modList-1.8.x.json", "utf8")
-  console.log "Read modList-1.8.x.json"
-  json18 = JSON.parse(jsonText18)
-  if compileType180
-    console.log "Output 1.8.x 通常型"
-    src0.output(json18, rmvTemp)
-  if compileType181
-    console.log "Output 1.8.x リソースパック型"
-    src1.output(json18, rmvTemp)
-  if compileType182
-    console.log "Output 1.8.x 直接導入型"
-    src2.output(json18, rmvTemp)
-  if compileType18b
-    console.log "Output 1.8.x BBCode"
-    srcBBcode.output(json18)
-  if compileType18m
-    console.log "Output 1.8.x Markdown"
-    srcMarkdown.output(json18)
+for key, v of compileType
+  if v
+    console.log "Output #{key}"
+    jsonText = fs.readFileSync("../template/modList-#{key}.json", "utf8")
+    console.log "Read modList-#{key}.json"
+    json = JSON.parse(jsonText)
+    if v[0]
+      console.log "Output #{key} 通常型"
+      src0.output(json, rmvTemp)
+    if v[1]
+      console.log "Output #{key} リソースパック型"
+      src1.output(json, rmvTemp)
+    if v[2]
+      console.log "Output #{key} 直接導入型"
+      src2.output(json, rmvTemp)
+    if v["b"]
+      console.log "Output #{key} BBCode"
+      srcBBcode.output(json)
+    if v["m"]
+      console.log "Output #{key} Markdown"
+      srcMarkdown.output(json)
 
 console.log "Completed"
 
