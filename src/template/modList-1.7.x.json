@@ -1,6 +1,6 @@
 {
-  "pack-version": "4.0.0",
-  "minecraft-version":"1.7.x",
+  "pack-version": "4.1.0",
+  "minecraft-version": "1.7.x",
   "mods":
     [
       {
@@ -15,7 +15,7 @@
       },
       {
         "name": "AdditionalPipes",
-        "version": "4.3.0",
+        "version": "4.7.0",
         "minecraft-version":
           [
             "1.7.10"
@@ -48,7 +48,7 @@
       },
       {
         "name": "AE2Stuff",
-        "version": "0.2.1.22",
+        "version": "0.5.0.56",
         "minecraft-version":
           [
             "1.7.10"
@@ -70,7 +70,7 @@
       },
       {
         "name": "AFSU",
-        "version": "1.2.1a",
+        "version": "1.2.2a",
         "minecraft-version":
           [
             "1.7.10"
@@ -93,12 +93,12 @@
       },
       {
         "name": "AppliedEnergistics2",
-        "version": "rv2s5",
+        "version": "rv2s10",
         "minecraft-version":
           [
             "1.7.10"
           ],
-        "contributors": "otkum",
+        "contributors": "TIER",
         "url": "http://ae2.ae-mod.info/",
         "path": "assets/appliedenergistics2/lang"
       },
@@ -207,7 +207,7 @@
       },
       {
         "name": "BdLib",
-        "version": "1.8.1",
+        "version": "1.9.3",
         "minecraft-version":
           [
             "1.7.10"
@@ -261,11 +261,12 @@
       },
       {
         "name": "CoFHCore",
-        "version": "3.0.2",
+        "version": "3.0.3",
         "minecraft-version":
           [
             "1.7.10"
           ],
+        "contributors": "otkum",
         "url": "http://teamcofh.com/",
         "path": "assets/cofh/lang"
       },
@@ -370,7 +371,7 @@
       },
       {
         "name": "Enderstorage",
-        "version": "1.4.7.33",
+        "version": "1.4.7.37",
         "minecraft-version":
           [
             "1.7.10"
@@ -425,12 +426,13 @@
         "path": "assets/exnihilo/lang"
       },
       {
-        "name": "ExtraCells",
-        "version": "2.1.71",
+        "name": "ExtraCells2",
+        "version": "2.2.72",
         "minecraft-version":
           [
             "1.7.10"
           ],
+        "contributors": "TIER",
         "url": "http://www.minecraftforum.net/topic/1801643",
         "path": "assets/extracells/lang"
       },
@@ -455,6 +457,16 @@
         "contributors": "otkum",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1280918",
         "path": "assets/meteors/lang"
+      },
+      {
+        "name": "ForgeMultiPart",
+        "version": "1.2.0.345",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
+        "url": "http://files.minecraftforge.net/ForgeMultipart/",
+        "path": "assets/microblock/lang"
       },
       {
         "name": "Fusion",
@@ -534,7 +546,7 @@
       },
       {
         "name": "IC2Classic",
-        "version": "1.7.10-7",
+        "version": "1.7.10-8",
         "minecraft-version":
           [
             "1.7.10"
@@ -545,7 +557,7 @@
       },
       {
         "name": "IguanaTinkerTweaks",
-        "version": "2.1.4",
+        "version": "2.1.5",
         "minecraft-version":
           [
             "1.7.10"
@@ -557,7 +569,7 @@
       },
       {
         "name": "IndustrialCraft2",
-        "version": "ex.2.2.2.732",
+        "version": "ex.2.2.786",
         "minecraft-version":
           [
             "1.7.10"
@@ -602,6 +614,17 @@
         "contributors": "TIER",
         "url": "http://www.minecraftforum.net/topic/981855",
         "path": "assets/ironchest/lang"
+      },
+      {
+        "name": "JourneyMap",
+        "version": "5.1.0",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
+        "contributors": "oktum",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1278348",
+        "path": "assets/journeymap/lang"
       },
       {
         "name": "M-Ore",
@@ -671,7 +694,7 @@
       },
       {
         "name": "ModularPowersuits",
-        "version": "0.11.0.181",
+        "version": "0.11.0.283",
         "minecraft-version":
           [
             "1.7.10"
@@ -704,7 +727,7 @@
       },
       {
         "name": "MrCrayfish'sFurnitureMod",
-        "version": "3.4.7",
+        "version": "3.4.8",
         "minecraft-version":
           [
             "1.7.10"
@@ -748,18 +771,18 @@
       },
       {
         "name": "NEIAddons",
-        "version": "1.12.9",
+        "version": "1.12.14",
         "minecraft-version":
           [
             "1.7.10"
           ],
-        "contributors": "otkum",
+        "contributors": "TIER",
         "url": "https://bdew.net/",
         "path": "assets/neiaddons/lang"
       },
       {
         "name": "NEIIntegration",
-        "version": "1.0.9",
+        "version": "1.0.13",
         "minecraft-version":
           [
             "1.7.10"
@@ -825,7 +848,7 @@
       },
       {
         "name": "OpenModsLib",
-        "version": "0.7.3",
+        "version": "0.8",
         "minecraft-version":
           [
             "1.7.10"
@@ -858,7 +881,7 @@
       },
       {
         "name": "PowerConverters",
-        "version": "3.1.0.59",
+        "version": "3.3.0",
         "minecraft-version":
           [
             "1.7.10"
@@ -868,8 +891,19 @@
         "path": "assets/powerconverters/lang"
       },
       {
+        "name": "ProjectRed",
+        "version": "4.7.0.9",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
+        "contributors": "TIER",
+        "url": "http://projectredwiki.com/wiki/Main_Page",
+        "path": "assets/projectred/lang"
+      },
+      {
         "name": "PlasmaCraft",
-        "version": "0.3.5-beta2",
+        "version": "0.4.0-beta2",
         "minecraft-version":
           [
             "1.7.10"
@@ -902,7 +936,7 @@
       },
       {
         "name": "RouterReborn",
-        "version": "1.1.14",
+        "version": "1.2.0.35",
         "minecraft-version":
           [
             "1.7.10"
@@ -1011,8 +1045,19 @@
         "path": "assets/mario/lang"
       },
       {
+        "name": "ThaumCraft4",
+        "version": "4.2.3.5",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
+        "contributors": "TIER",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1292130",
+        "path": "assets/thaumcraft/lang"
+      },
+      {
         "name": "ThaumicEnergistics",
-        "version": "0.8.10.10",
+        "version": "0.9.0.0",
         "minecraft-version":
           [
             "1.7.10"
@@ -1056,7 +1101,7 @@
       },
       {
         "name": "TiCTooltips",
-        "version": "1.2.4",
+        "version": "1.2.5",
         "minecraft-version":
           [
             "1.7.10"
@@ -1067,7 +1112,7 @@
       },
       {
         "name": "Tinkers'Construct",
-        "version": "1.8.5",
+        "version": "1.8.7",
         "minecraft-version":
           [
             "1.7.10"
@@ -1099,12 +1144,12 @@
       },
       {
         "name": "Translocator",
-        "version": "1.1.1.14",
+        "version": "1.1.2.15",
         "minecraft-version":
           [
             "1.7.10"
           ],
-        "contributors": "otkum",
+        "contributors": "TIER",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1279956",
         "path": "assets/translocator/lang"
       },
@@ -1121,14 +1166,25 @@
       },
       {
         "name": "TwilightForest",
-        "version": "2.3.4",
+        "version": "2.3.7",
         "minecraft-version":
           [
             "1.7.10"
           ],
-        "contributors": "タックピー",
+        "contributors": "myonta",
         "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1276258",
         "path": "assets/twilightforest/lang"
+      },
+      {
+        "name": "UsefulFood",
+        "version": "1.4.5",
+        "minecraft-version":
+          [
+            "1.7.10"
+          ],
+        "contributors": "S_Hiei",
+        "url": "http://www.minecraftforum.net/forums/mapping-and-modding/1284835",
+        "path": "assets/usefulfood/lang"
       },
       {
         "name": "VanityBlocks",
@@ -1154,7 +1210,7 @@
       },
       {
         "name": "WailaHarvestability",
-        "version": "1.1.2",
+        "version": "1.1.5",
         "minecraft-version":
           [
             "1.7.10"
