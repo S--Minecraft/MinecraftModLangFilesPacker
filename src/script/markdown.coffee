@@ -4,7 +4,7 @@
 ###
 fs = require "fs-extra"
 
-exports.modJsonToBBcode = (modJson) ->
+exports.modJsonToMarkdown = (modJson) ->
   mkdn = " - "
   if modJson.url?
     mkdn += "[#{modJson.name}](#{modJson.url})・・・"
@@ -21,7 +21,7 @@ exports.modJsonToBBcode = (modJson) ->
 exports.output = (json) ->
   mkdn = "# " + json["minecraft-version"] + "\r\n"
   for mod in json.mods
-    mkdn += @modJsonToBBcode(mod)
+    mkdn += @modJsonToMarkdown(mod)
   fs.writeFile("../../output/markdown/" + json["minecraft-version"] + " - " + json["pack-version"] + ".txt", mkdn, (err) ->
     if err?
       console.log err
