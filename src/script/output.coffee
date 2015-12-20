@@ -37,20 +37,21 @@ exports.makeReadmeText = (json, type, title, escaped) ->
   if type is 1 or type is 2
     for mod in json.mods
       if mod.advanced?
+        advancedPath = util.ifObjToStr(mod.advanced.path)
         if mod.advanced.type is "config" and type is 1
-          readmePath += "#{mod.name}(#{mod.version}): .minecraftフォルダ/config/#{mod.advanced.path}\r\n"
+          readmePath += "#{mod.name}(#{mod.version}): .minecraftフォルダ/config/#{advancedPath}\r\n"
         else if mod.advanced.type is "zip"
-          readmePath += "#{mod.name}(#{mod.version}): modのzipやjar/#{mod.advanced.path}\r\n"
+          readmePath += "#{mod.name}(#{mod.version}): modのzipやjar/#{advancedPath}\r\n"
   else if type is 0
     for mod in json.mods
       readmePath += "#{mod.name}(#{mod.version}): "
-      if mod.path?
-        readmePath += "#{mod.path}"
+      if mod.path? then readmePath += util.ifObjToStr(mod.path)
       if mod.advanced?
+        advancedPath = util.ifObjToStr(mod.advanced.path)
         if mod.advanced.type is "config"
-          readmePath += " .minecraftフォルダ/config/#{mod.advanced.path}"
+          readmePath += " .minecraftフォルダ/config/#{advancedPath}"
         else if mod.advanced.type is "zip"
-          readmePath += " modのzipやjar/#{mod.advanced.path}"
+          readmePath += " modのzipやjar/#{advancedPath}"
       readmePath += "\r\n"
   if readmePath is "《配置場所(config/zip/jar)》\r\n"
     readmePath = ""

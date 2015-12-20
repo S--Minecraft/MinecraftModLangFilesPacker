@@ -16,6 +16,10 @@ exports.existInArray = (arr, val) ->
   else
     return false
 
+# オブジェクトかどうか
+exports.isObject = (obj) ->
+  return (typeof obj is "object")
+
 # 配列かどうか
 exports.isArray = (arr) ->
   return (arr instanceof Array)
@@ -30,3 +34,12 @@ exports.exist = (arr, val) ->
     return @existInArray(arr, val)
   else
     return (arr is val)
+
+# オブジェクトだったら文字列にする
+exports.ifObjToStr = (obj) ->
+  if @isObject(obj)
+    objStr = ""
+    for key, val of obj
+      objStr += val + ","
+    obj = objStr.slice(0, -1)
+  return obj
