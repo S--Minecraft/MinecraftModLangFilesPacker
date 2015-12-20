@@ -31,8 +31,8 @@ exports.output = (json, callback) ->
                     "../../temp/#{minecraftVer} - #{packVer} - 1/#{path}/#{mod.name} - #{mod.version}/#{fileName}")
 
       if mod.path?
-        # pathが配列の時
-        if util.isArray(mod.path)
+        # pathがオブジェクトの時
+        if util.isObject(mod.path)
           for key, val of mod.path
             if not util.existInArray(paths, val)
               fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/#{key}",
