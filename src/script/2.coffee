@@ -14,9 +14,14 @@ exports.output = (json, callback) ->
   paths = []
   escaped = [] # エスケープされたmodのオブジェクトの配列
 
+  baseToPath = "../../temp/#{minecraftVer} - #{packVer} - 2"
+  baseToPathRes = "../../temp/S_lang_files_in_#{minecraftVer}"
+
   # 翻訳ファイルコピー
   for mod in json.mods
-    if !fs.existsSync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/")
+    baseFromPath = "../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}"
+
+    if !fs.existsSync(baseFromPath)
       console.log "Doesn't exist! : " + "/#{mod.name}/#{mod.version}/"
     else
       # advanced時
@@ -25,53 +30,44 @@ exports.output = (json, callback) ->
         if mod.advanced.file? then fileName = mod.advanced.file else fileName = ""
         if mod.advanced.type is "config"
           if not util.existInArray(paths, mod.advanced.path)
-            fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/#{fileName}",
-                        "../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/config/#{mod.advanced.path}/#{fileName}")
+            toPath = ".minecraft/config/#{mod.advanced.path}/#{fileName}"
           else
-            fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/#{fileName}",
-                        "../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/config/#{mod.advanced.path} - #{mod.version}/#{fileName}")
+            toPath = ".minecraft/config/#{mod.advanced.path} - #{mod.version}/#{fileName}"
             escaped.push(mod)
           paths.push(mod.advanced.path)
         else if mod.advanced.type is "zip"
-          fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/#{fileName}",
-                      "../../temp/#{minecraftVer} - #{packVer} - 2/To_zip,jar/#{mod.name} - #{mod.version}/#{fileName}")
+          toPath = "#{baseToPath}/To_zip,jar/#{mod.name} - #{mod.version}/#{fileName}"
+        fs.copySync("#{baseFromPath}/#{fileName}", "#{baseToPath}/#{toPath}")
       if mod.path?
         # pathがオブジェクトの時
         if util.isObject(mod.path)
           for key, val of mod.path
-            if not util.existInArray(paths, val)
-              fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/#{key}",
-                          "../../temp/S_lang_files_in_#{minecraftVer}/#{val}")
-            else
-              fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}/#{key}",
-                          "../../temp/S_lang_files_in_#{minecraftVer}/#{val} - #{mod.version}")
+            toPath = "#{baseToPathRes}/#{val}"
+            if util.existInArray(paths, val)
+              toPath += " - #{mod.version}"
               escaped.push(mod)
+            fs.copySync("#{baseFromPath}/#{key}", toPath)
             paths.push(val)
         else if util.isString(mod.path)
-          if not util.existInArray(paths, mod.path)
-            fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}",
-                        "../../temp/S_lang_files_in_#{minecraftVer}/#{mod.path}")
-          else
-            fs.copySync("../../../MinecraftModLangFiles/#{mod.name}/#{mod.version}",
-                        "../../temp/S_lang_files_in_#{minecraftVer}/#{mod.path} - #{mod.version}")
+          toPath = "#{baseToPathRes}/#{mod.path}"
+          if util.existInArray(paths, val)
+            toPath += " - #{mod.version}"
             escaped.push(mod)
-          paths.push(mod.path)
-
+          fs.copySync("#{baseFromPath}", toPath)
+          paths.push(val)
   #pack.mcmetaとpack.png
-  fs.copySync("../template/pack.mcmeta",
-              "../../temp/S_lang_files_in_#{minecraftVer}/pack.mcmeta")
-  fs.copySync("../template/pack.png",
-              "../../temp/S_lang_files_in_#{minecraftVer}/pack.png")
+  fs.copySync("../template/pack.mcmeta", "#{baseToPathRes}/pack.mcmeta")
+  fs.copySync("../template/pack.png", "#{baseToPathRes}/pack.png")
 
   #S_lang_files_in_version.txt
-  fs.mkdirsSync("../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/")
-  fs.writeFileSync("../../temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_version.txt",
+  fs.mkdirsSync("#{baseToPath}/.minecraft/resourcepacks/")
+  fs.writeFileSync("#{baseToPath}/.minecraft/resourcepacks/S_lang_files_in_version.txt",
                    "#{minecraftVer} - #{packVer}")
 
   # readme作成
   title = "/lang_S_#{minecraftVer}(直接導入型)//////////////////////////////by S/////"
   readme = output.makeReadmeText(json, type, title, escaped)
-  fs.outputFileSync("../../temp/#{minecraftVer} - #{packVer} - 2/Readme - 導入前に読んでください.txt", readme)
+  fs.outputFileSync("#{baseToPath}/Readme - 導入前に読んでください.txt", readme)
 
   # リソースパックのzip
   output.zipOne("temp/#{minecraftVer} - #{packVer} - 2/.minecraft/resourcepacks/S_lang_files_in_#{minecraftVer}.zip","temp/S_lang_files_in_#{minecraftVer}", json, ->
