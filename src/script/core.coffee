@@ -51,7 +51,7 @@ rmvTemp = () ->
 for key, v of compileType
   if v
     console.log "Output #{key}"
-    jsonText = fs.readFileSync("../template/modList-#{key}.json", "utf8")
+    jsonText = fs.readFileSync("../../../MinecraftModLangFiles/modList-#{key}.json", "utf8")
     console.log "Read modList-#{key}.json"
     json = JSON.parse(jsonText)
     if v[0]
